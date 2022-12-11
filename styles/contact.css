@@ -1,0 +1,361 @@
+.contact_container {
+    /* min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--main-color); */
+
+
+    width: 80vw;
+    height: 80vh;
+    /* margin: 5% 0; */
+    margin: 10vh 0;
+    position: relative;
+    /* left: -2.7%; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-h1-neu {
+    width: 20%;
+    min-width: 200px;
+    height: 10%;
+    min-height: 50px;
+    margin-bottom: 3%;
+    border: none;
+
+    animation-name: page_load_embedded;
+    animation-duration: 0.01s;
+    animation-delay: 0s;
+}
+
+.h1-contact {
+    font-family: "Poppins", "Open Sans", sans-serif;
+    color: #808182;
+    font-size: 2em;
+    text-align: center;
+    font-size: 140%;
+}
+
+.contact_form {
+    width: 42%;
+    height: 90%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.contact-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid black; */
+    min-width: 315px;
+}
+
+.form-input {
+    width: 40%;
+    padding: 0 20px;
+    margin-bottom: 5%;
+    box-shadow: 
+    -12px -10px 10px 0px white,
+    10px 10px 15px 0px rgba(0, 0, 0, 0.13);
+    transition: all 1s;
+}
+
+input:focus {
+    outline: none;
+}
+
+.contact_icon {
+    width: 70%;
+    transform: translate(3px, -12px);
+}
+
+.subject_input {
+    width: 92%;
+}
+
+.subject_input::placeholder {
+    text-align: center;
+    margin-left: 66px;
+}
+
+.textbox {
+    padding: 20px;
+    font-family: "Poppins", "Open Sans", sans-serif;
+    color: rgb(80, 78, 78);
+
+    resize: none;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 70%;
+
+    box-shadow: -15px -15px 13px 0px white,
+                7px 7px 11px 1px rgba(0, 0, 0, 0.21);
+    transition: all 1s;
+}
+
+.textbox::placeholder {
+    font-family: "Poppins";
+    font-size: 1.55em;
+    color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: -80%;
+    /* top: -6px; */
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+.submit {
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.submit_input {
+    font-family: "Poppins", "Open Sans", sans-serif;
+    font-size: 1.3em;
+
+    color: white;
+    cursor: pointer;
+    padding: 10px 5px;
+    
+    width: 25%;
+    min-width: 100px;
+    height: 100%;
+    background-color: #7E7F80;
+    border: none;
+
+    background-color: rgb(255, 106, 0);
+    background-color: #7E7F80;
+    border: 2px solid #505151;
+    transition: all 0.5s;
+}
+
+.submit_input:hover, .submit_input:focus {
+    border: 2px solid #505151;
+    background-color: rgb(255, 106, 0);
+    transition: all 0.5s;
+}
+
+/*
+* -------------------- Media Queries ------------------------
+*/
+
+@media screen and (max-width: 1050px){
+
+    .contact-h1-neu {
+        margin-bottom: 3%;
+    }
+
+    .contact_container {
+        margin-top: 4%;
+        margin-bottom: 11%;
+    }
+
+    .textbox {
+        min-height: 210px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .twenty-three {
+        display: none;
+    }
+
+    .neu_grid {
+        display: none;
+    }
+
+    .contact_container {
+        margin-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+
+    .contact_container {
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .contact-h1-neu {
+        margin-bottom: 5%;
+    }
+
+    .contact_container {
+        flex-direction: column;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .contact-h1-neu {
+        margin-bottom: 12%;
+    }
+
+    .contact_container {
+        margin-top: 13vh;
+        margin-bottom: 8vh;
+    }
+
+    .contact_form {
+        min-width: 390px;
+    }
+
+    .contact-input {
+        min-width: 360px;
+    }
+
+    .form-input {
+        min-height: 45px;
+    }
+
+    .textbox {
+        min-height: 250px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .contact_form {
+        min-height: 100%;
+        min-width: 360px;
+    }
+
+    .contact-input {
+        min-width: 360px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .contact_form {
+        min-width: 340px;
+    }
+
+    .contact-input {
+        min-width: 340px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 340px) {
+
+    .contact_form {
+        min-width: 270px;
+    }
+
+    .contact-input {
+        min-width: 270px;
+    }
+
+}
+
+
+
+/*----------------------------------------- STYLES WITH SCREEN HEIGHT -----------------------------------------*/
+
+
+/*Exact styles for "Nest Hub Max" device dimensions*/
+
+@media screen and (max-width: 1300px) and (height: 800px) {
+
+    .contact-h1-neu {
+        margin-bottom: 3%;
+        max-width: 250px;
+        min-height: 70px;
+        height: 70px;
+    }
+
+    .contact_container {
+        min-width: 1400px;
+        width: 1400px;
+
+        min-height: 650px;
+        height: 650px;
+
+        margin-top: 3%;
+        margin-bottom: 11%;
+    }
+
+    .form-input {
+        min-height: 50px;
+    }
+
+    .form-input::placeholder {
+        font-size: 1.2em;
+    }
+
+    .textbox {
+        min-height: 280px;
+    }
+
+    .textbox::placeholder {
+        font-size: 1.95em;
+    }
+
+}
+
+@media screen and (min-height: 1000px) {
+
+    .contact-h1-neu {
+        margin-bottom: 3%;
+        max-width: 250px;
+        min-height: 70px;
+        height: 70px;
+    }
+
+    .contact_container {
+        min-width: 1500px;
+        width: 1500px;
+
+        min-height: 650px;
+        height: 650px;
+
+        margin-top: 18%;
+        margin-bottom: 11%;
+    }
+
+    .form-input {
+        min-height: 57px;
+    }
+
+    .form-input::placeholder {
+        font-size: 1.25em;
+    }
+
+    .textbox {
+        min-height: 350px;
+    }
+
+    .textbox::placeholder {
+        font-size: 1.95em;
+    }
+}
