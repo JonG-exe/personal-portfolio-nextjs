@@ -3,6 +3,7 @@
 import Head from "next/head"
 import "../styles/index.css"
 import "../styles/contact.css"
+import "../styles/tutorial.css"
 import Navbar from "../components/Navbar"
 
 function MyApp({ Component, pageProps }) {

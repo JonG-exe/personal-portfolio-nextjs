@@ -1,11 +1,13 @@
 // import { Link } from "react-router-dom"
+import Link from "next/link"
+
 
 function Menu (props) {
 
     return(
         <div className="menu_modal" style={{"display" : ( props.menuActive ? "flex" : "none" )}}>
-            {/* <Link to='/tutorial' className="modal_link">Tutorial Component</Link> */}
-        </div>
+            <Link href='/SEO' className="modal_link">SEO Page</Link>
+            </div>
     )
 }
 

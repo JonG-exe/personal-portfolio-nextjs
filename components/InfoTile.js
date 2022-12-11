@@ -11,7 +11,7 @@ export default function InfoTile(props) {
     function iconHover() {
 
         const items = ["HTML 5", "CSS 3", "Javascript", "MongoDB", "React JS", "Adobe XD"]
-        const backgroundColors = ["rgb(255, 106, 0)", "rgba(0, 51, 128, 0.89)", "yellow", "green", "rgb(0, 145, 255)", "purple"]
+        // const backgroundColors = ["rgb(255, 106, 0)", "rgba(0, 51, 128, 0.89)", "yellow", "green", "rgb(0, 145, 255)", "purple"]
         const selectedIcon = document.getElementById("selected-icon")
         const icons = document.getElementsByClassName("icon-image")
 
@@ -33,8 +33,6 @@ export default function InfoTile(props) {
     
     return (
         <div className={props.className}>
-
-            
 
             <div className={props.title_right ? "infoTile_title_right" : "infoTile_title_left"}> 
                 {props.title}
@@ -58,7 +56,8 @@ export default function InfoTile(props) {
                     <img className="icon-image" src={image_five.src} name="react" />
                     <img className="icon-image" src={image_six.src} name="adobexd" />
                     
-                    {/* <span style={{"display" : "none"}}>{setTimeout(iconHover, 100)}</span> */}
+                    {/* <span style={{"display" : "none"}}>{setTimeout(iconHover, 
+                    100)}</span> */}
 
                 </div>
 
@@ -76,7 +75,6 @@ export default function InfoTile(props) {
                     {"}"}
                 </div>
             }
-
 
         </div>
     )

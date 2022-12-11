@@ -1,6 +1,5 @@
 import React, {useEffect} from "react"
 import InfoTile from "./InfoTile";
-// import {Link} from "react-router-dom"
 import profile_pic from "../images/jon-g-profile-picture.png"
 import PageDesign from "./PageDesign"
 import Link from "next/link"
@@ -21,10 +20,6 @@ let infoTile_info = {
 }
 
 export default function Home () {
-
-    // ----------- Set page title -------------
-    // document.title = "Dev | Lucid Atom"
-    //-----------------------------------------
 
     /**
      * Make intro elements appear on the home page
@@ -48,12 +43,8 @@ export default function Home () {
                     <div className="profile-pic-area neu neu-circle embedded-neu">
                         
                         <div className="neu-circle-in-circle neu extruded-neu">
-                            <img className="neu-profile-pic" src={profile_pic.src} />
+                            <img className="neu-profile-pic" src={profile_pic.src} alt="Jonathan Gray - Lucid Atom's lead freelance web developery"/>
                         </div>
-
-                        {/* <Link to="/contact"> */}
-                            {/* <button className="CTA CTA_one">Get In Touch</button> */}
-                        {/* </Link> */}
 
                         <Link href="/contact">
                             <button className="CTA CTA_one">Get In Touch</button>
