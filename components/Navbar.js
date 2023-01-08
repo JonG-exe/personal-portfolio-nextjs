@@ -47,7 +47,7 @@ function Navbar() {
 
             <Menu menuActive={menuActive}/>
 
-            <ul>
+            <ul className="nav-items">
                 <li>
                     <button onClick={menuClick} className="menu_icon">
                         <div className="menu_rect"></div>
