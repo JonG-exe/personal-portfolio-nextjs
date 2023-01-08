@@ -1095,6 +1095,7 @@ button {
         top: 8%;
         left: 15%;
         font-size: 4.7em;
+        
     }
 
     .CTA {
@@ -1370,8 +1371,11 @@ button {
 
     h1.inset-text {
         top: 10%;
-        left: 24%;
         font-size: 4.2em;
+
+        width: max-content;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .container {
@@ -1466,7 +1470,6 @@ button {
     }
 
     h1.inset-text {
-        left: 18%;
         font-size: 4.2em;
     }
 
@@ -1546,7 +1549,6 @@ button {
     }
 
     h1.inset-text {
-        left: 10%;
         font-size: 4.2em;
     }
     
@@ -1607,6 +1609,10 @@ button {
 
 @media screen and (max-width: 300px) { 
     h1.inset-text {
+        /* left: 7%; */
+        width: max-content;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 3.2em;
     }
 }
@@ -1916,7 +1922,7 @@ button {
     font-family: "Bahnschrift", "Poppins", sans-serif;
     font-size: 6em;
     line-height: 0.7em;
-    
+
     position: absolute;
     top: 8.5%;
     left: 15.85%;

@@ -15,7 +15,7 @@ export default function PageDesign() {
             {/* <img src={hello.src} className="hello_element" alt="embedded neumorphic hello text"/>
             <img src={jonG.src} className="jon_g_element" alt="I'm Jon.G title image"/> */}
 
-            <h1 class="inset-text"><div>Hello.</div>I'm Jon.G</h1>
+            {/* <h1 class="inset-text"><div>Hello.</div>I'm Jon.G</h1> */}
 
             {/* <img src={rocket} className="rocket" alt="extruded neumorphic rocket"/> */}
             <img src={neuGrid.src} className="neu_grid" alt="grid of neumorphic elements"/>

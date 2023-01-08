@@ -38,8 +38,11 @@ export default function Home () {
             <PageDesign />
 
             <section className="container">
+                
+                <h1 class="inset-text"><div>Hello.</div>I'm Jon.G</h1>
 
                 <div className="profile">
+
                     <div className="profile-pic-area neu neu-circle embedded-neu">
                         
                         <div className="neu-circle-in-circle neu extruded-neu">
