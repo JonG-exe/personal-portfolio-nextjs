@@ -823,7 +823,7 @@ button {
 }
 
 .my_work {
-    font-family: "Bahnschrift";
+    font-family: "Bahnschrift", "Segoe UI", "Poppins", sans-serif;
     font-size: 3em;
 
     color: rgba(119, 223, 223, 0.78);
@@ -1209,7 +1209,8 @@ button {
     .menu_icon {
         margin:0;
         margin-left: -90%;
-        width: 90%;
+        /* width: 90%; */
+        width: 3.4em;
         display: flex;
         z-index: 1;
         transition: transform 0.4s;
@@ -1217,15 +1218,25 @@ button {
 
     .menu_link > .facebook_icon {
         width: 36%;
+
+        min-width: 22px;
+        width: 22px;
     } 
     .linkedin_icon {
-
+        min-width: 30px;
+        width: 30px;
     }
     .menu_link > .youtube_icon {
-        width: 62%;
+        /* width: 62%; */
+
+        min-width: 38px;
+        width: 38px;
     }
     .menu_link > .home_icon_img {
-        width: 115%;
+        /* width: 115%; */
+
+        min-width: 45px;
+        width: 45px;
     }
 
     .menu_rect{
@@ -1876,7 +1887,7 @@ button {
 
 .inset-text {
     z-index: 2;
-    font-family: "Bahnschrift";
+    font-family: "Bahnschrift", "Segoe UI", "Poppins", sans-serif;
     font-size: 6em;
     line-height: 0.7em;
     
