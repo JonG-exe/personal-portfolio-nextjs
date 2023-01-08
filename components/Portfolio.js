@@ -208,7 +208,7 @@ export default function Portfolio () {
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Unrealized Opportunity"
-                    alt="this button leads to a currently empty project"
+                    // alt="this button leads to a currently empty project"
                 />
                 
             </div>
