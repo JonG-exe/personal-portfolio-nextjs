@@ -39,7 +39,7 @@ export default function InfoTile(props) {
             </div>
             
             
-            {props.pageDesignElement && <img className="books"src={props.pageDesignElement}/>}
+            {/* {props.pageDesignElement && <img className="books" src={props.pageDesignElement} alt={props.alt}/>} */}
 
             {props.className === "infoTile infoTile_three" 
 
@@ -49,12 +49,12 @@ export default function InfoTile(props) {
 
                     <div id="selected-icon"></div>
 
-                    <img className="icon-image" src={image_one.src} name="html5"/>
-                    <img className="icon-image" src={image_two.src} name="css3" />
-                    <img className="icon-image" src={image_three.src} name="javascript" />
-                    <img className="icon-image" src={image_four.src} name="mongodb" />
-                    <img className="icon-image" src={image_five.src} name="react" />
-                    <img className="icon-image" src={image_six.src} name="adobexd" />
+                    <img className="icon-image" src={image_one.src} name="html5" alt="html 5 logo"/>
+                    <img className="icon-image" src={image_two.src} name="css3" alt="css 3 logo"/>
+                    <img className="icon-image" src={image_three.src} name="javascript" alt="javascript logo"/>
+                    <img className="icon-image" src={image_four.src} name="mongodb" alt="mongodb logo"/>
+                    <img className="icon-image" src={image_five.src} name="react" alt="react logo"/>
+                    <img className="icon-image" src={image_six.src} name="adobexd" alt="adobe XD logo"/>
                     
                     {/* <span style={{"display" : "none"}}>{setTimeout(iconHover, 
                     100)}</span> */}

@@ -43,7 +43,7 @@ export default function Home () {
                     <div className="profile-pic-area neu neu-circle embedded-neu">
                         
                         <div className="neu-circle-in-circle neu extruded-neu">
-                            <img className="neu-profile-pic" src={profile_pic.src} alt="Jonathan Gray - Lucid Atom's lead freelance web developery"/>
+                            <img className="neu-profile-pic" src={profile_pic.src} alt="Jonathan Gray - Lucid Atom's lead freelance web developer"/>
                         </div>
 
                         <Link href="/contact">

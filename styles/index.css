@@ -822,6 +822,14 @@ button {
     min-width: 220px;
 }
 
+.my_work {
+    font-family: "Bahnschrift";
+    font-size: 3em;
+
+    color: rgba(119, 223, 223, 0.78);
+    text-shadow: 9px 2px 6px #ecf0f3dd, 0 0 0 rgba(0, 0, 0, 1);
+}
+
 .main_image {
     width: 350px;
     position: absolute;
@@ -1083,6 +1091,12 @@ button {
         left: 10%;
     }
 
+    h1.inset-text {
+        top: 8%;
+        left: 15%;
+        font-size: 5em;
+    }
+
     .CTA {
         min-width: 150px;
         min-height: 41px;
@@ -1100,6 +1114,7 @@ button {
     .work {
         margin-bottom: 2%;
     }
+
 
     #section_two {
         margin-top: 10%;
@@ -1128,6 +1143,12 @@ button {
     
     .jon_g_element {
         top: 22.5%;
+    }
+
+    h1.inset-text {
+        top: 13%;
+        left: 15%;
+        font-size: 5em;
     }
 
     .container {
@@ -1239,6 +1260,10 @@ button {
         width: 160px;
     }
 
+    .my_work {
+        font-size: 2.2em;
+    }
+
     .work {
         margin-bottom: 2%;
     }
@@ -1268,6 +1293,12 @@ button {
         width: 28%;
         top: 24.5%;
         left: 6.5%;
+    }
+
+    h1.inset-text {
+        top: 15%;
+        left: 10%;
+        font-size: 4.5em;
     }
 
     .neu_grid {
@@ -1322,6 +1353,12 @@ button {
         width: 35%;
         top: 16.5%;
         left: 30%;
+    }
+
+    h1.inset-text {
+        top: 10%;
+        left: 24%;
+        font-size: 4.5em;
     }
 
     .container {
@@ -1415,6 +1452,11 @@ button {
         left: 20%;
     }
 
+    h1.inset-text {
+        left: 18%;
+        font-size: 4.5em;
+    }
+
     .container {
         margin-top: 35%;
     }
@@ -1437,6 +1479,10 @@ button {
 
     .work_text_image {
         width: 160px;
+    }
+
+    h1.inset-text {
+        font-size: 4em;
     }
 
     .work {
@@ -1485,6 +1531,11 @@ button {
         top: 15.25%;
         left: 18%;
     }
+
+    h1.inset-text {
+        left: 10%;
+        font-size: 4.8em;
+    }
     
     .container {
         margin-top: 47%;
@@ -1508,6 +1559,10 @@ button {
         width: 53%;
         top: 16%;
         left: 20%;
+    }
+
+    h1.inset-text {
+        font-size: 4em;
     }
     
     .container {
@@ -1535,6 +1590,12 @@ button {
         min-height: 160px;
     }
 
+}
+
+@media screen and (max-width: 300px) { 
+    h1.inset-text {
+        font-size: 3.5em;
+    }
 }
 
 /*
@@ -1809,4 +1870,31 @@ button {
     box-shadow: -2px -1px 2px 1px white,
     0px 1px 3px 1px rgba(0, 0, 0, 0.25);
     transition: all 0.5s;
+}
+
+
+
+.inset-text {
+    z-index: 2;
+    font-family: "Bahnschrift";
+    font-size: 6em;
+    line-height: 0.7em;
+    
+    position: absolute;
+    top: 8.5%;
+    left: 15.85%;
+
+    animation: jon_g_anim 4s;
+
+    /* Shadows are visible under slightly transparent text color */
+    /* color: rgba(119, 223, 223, 0.78); */
+    /* color: rgba(98, 189, 182, 1); */
+    color: rgba(203, 145, 213, 0.78);
+    text-shadow: 9px 2px 6px var(--main-color), 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.inset-text div {
+    font-size: 0.5em;
+    color: rgba(227, 230, 232, 0.777);
+    animation: hello_anim 2s;
 }

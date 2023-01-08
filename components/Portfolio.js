@@ -180,7 +180,9 @@ export default function Portfolio () {
         <section id="section_two">
             
             <h2 className={!showWork.isShown ? "work_h2_text" : "work_h2_text work_h2_invisible"}>
-                <img className="work_text_image" src={my_work.src}></img>
+                {/* <img className="work_text_image" src={my_work.src} alt="neumorphic 'my work' h2 image"></img> */}
+
+                <span className="my_work">My Work</span>
             </h2>
 
             <div className={!showWork.isShown ? "work" : "work work_active"}>
@@ -190,6 +192,7 @@ export default function Portfolio () {
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Supernova | Maritime"
+                    alt="supernova - maritime financial logo"
                 />
 
                 <Glass 
@@ -197,6 +200,7 @@ export default function Portfolio () {
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Asymmetry"
+                    alt="asymmetry travel logo"
                 />
 
                 <Glass 
@@ -204,6 +208,7 @@ export default function Portfolio () {
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Unrealized Opportunity"
+                    alt="this button leads to a currently empty project"
                 />
                 
             </div>
@@ -225,15 +230,15 @@ export default function Portfolio () {
 
                             <div className="project_slider">
                                 <div className="project_image_container">
-                                    <img onClick={imageClick} className="portfolio_image" src={imagesInfo[imageSetNum][imageNum].image} />
+                                    <img onClick={imageClick} className="portfolio_image" src={imagesInfo[imageSetNum][imageNum].image} alt={imagesInfo[imageSetNum][imageNum].alt} />
                                 </div>
                                 
                                 <button onClick={switchImage} className="switch-arrow switch-arrow-left">
-                                    <img name="switchImageLeft" src={switchArrow.src} />
+                                    <img name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
                                 </button>
 
                                 <button onClick={switchImage} className="switch-arrow switch-arrow-right">
-                                    <img name="switchImageRight" src={switchArrow.src} />
+                                    <img name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
                                 </button>
                             </div>
 
@@ -255,13 +260,13 @@ export default function Portfolio () {
                 <ExitButton class="exit-carousel" exitElement={exitCarousel}/>
 
                 <button onClick={switchImage} className="switch-arrow-left-carousel">
-                    <img name="switchImageLeft" src={switchArrow.src} />
+                    <img name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
                 </button>
 
-                <img className="carousel-image" onClick={(e)=>{e.stopPropagation()}} src={imagesInfo[imageSetNum][imageNum].image}></img>
+                <img className="carousel-image" onClick={(e)=>{e.stopPropagation()}} src={imagesInfo[imageSetNum][imageNum].image} alt="neumorphic clickable arrow"></img>
 
                 <button onClick={switchImage} className="switch-arrow-right-carousel">
-                    <img name="switchImageRight" src={switchArrow.src} />
+                    <img name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
                 </button>
                 
             </div>

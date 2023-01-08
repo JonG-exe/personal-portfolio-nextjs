@@ -36,18 +36,18 @@ function Contact() {
 
                 <div className="contact-input">
                     <input className="form-input neu extruded-neu" name="first_name" placeholder="First Name" required />
-                    <span><img className="contact_icon" src={person_icon.src}/></span>
+                    <span><img className="contact_icon" src={person_icon.src} alt="person icon"/></span>
                     <input className="form-input neu extruded-neu" name="last_name" placeholder="Last Name" required />
                 </div>
                 
                 <div className="contact-input">
                     <input className="form-input neu extruded-neu" name="phone" type="phone" placeholder="Phone" />
-                    <span><img className="contact_icon" src={phone_email_icon.src}/></span>
+                    <span><img className="contact_icon" src={phone_email_icon.src} alt="contact icon"/></span>
                     <input className="form-input neu extruded-neu" name="email" type="email" placeholder="Email" required />
                 </div>
                 
                 <div className="contact-input">
-                    <span><img className="contact_icon" src={subject_icon.src}/></span>
+                    <span><img className="contact_icon" src={subject_icon.src} alt="subject icon"/></span>
                     <input className="form-input subject_input neu extruded-neu" name="subject" placeholder="Subject" required />
                 </div>
 

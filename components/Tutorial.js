@@ -9,7 +9,7 @@ function Tutorial({mainContent, authorImg, authorName}) {
                     <h1 className="h1-tutorial">SEO - A How To Guide</h1>
 
                     <div className="tutorial-author-profile">
-                        <img className="author-img" src={authorImg.src} />
+                        <img className="author-img" src={authorImg.src} alt={`${authorName} is the author of this article`}/>
                         <div className="author-name">by {authorName}</div>
                     </div>
                 </div>
@@ -19,20 +19,20 @@ function Tutorial({mainContent, authorImg, authorName}) {
                 
                 <div className="tutorial-content neu-tutorial">
 
-                    <img className="tutorial-content-img" src={tempProfilePhoto.src} alt="author's profile photo"/>
+                    <img className="tutorial-content-img" src={tempProfilePhoto.src} alt={`Author ${authorName}'s profile photo`}/>
 
                     {mainContent}
 
                 </div>
 
-                <div className="right-section"> 
+                <aside className="right-section"> 
                     <div className="ads neu-tutorial"></div>
 
                     <div className="related-content-and-CV">
                         <div className="related-content neu-tutorial"></div>
                         <div className="CV-placeholder neu-tutorial"></div>
                     </div>
-                </div>    
+                </aside>    
             </div>
         </main>
     )

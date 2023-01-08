@@ -6,7 +6,7 @@ export default function CV(props) {
     return (
         <div className={!props.showWork.isShown ? "CV embedded-neu" : "CV embedded-neu CV_hidden"}>
             <a href="" download="" className="CV_surface extruded-neu">
-                <img className="CV_image" src={CV_image}/>
+                <img className="CV_image" src={CV_image} alt="curriculum vitae (cv) file"/>
             </a>
         </div>
     )
