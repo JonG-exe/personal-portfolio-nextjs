@@ -1094,7 +1094,7 @@ button {
     }
 
     h1.inset-text {
-        top: 8%;
+        top: 0%;
         left: 15%;
         font-size: 4.7em;
         
@@ -1955,7 +1955,7 @@ button {
     line-height: 0.7em;
 
     position: absolute;
-    top: 8.5%;
+    top: -2%;
     left: 15.85%;
 
     animation: jon_g_anim 4s;
