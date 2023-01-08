@@ -1094,7 +1094,7 @@ button {
     h1.inset-text {
         top: 8%;
         left: 15%;
-        font-size: 5em;
+        font-size: 4.7em;
     }
 
     .CTA {
@@ -1371,7 +1371,7 @@ button {
     h1.inset-text {
         top: 10%;
         left: 24%;
-        font-size: 4.5em;
+        font-size: 4.2em;
     }
 
     .container {
@@ -1467,7 +1467,7 @@ button {
 
     h1.inset-text {
         left: 18%;
-        font-size: 4.5em;
+        font-size: 4.2em;
     }
 
     .container {
@@ -1547,7 +1547,7 @@ button {
 
     h1.inset-text {
         left: 10%;
-        font-size: 4.8em;
+        font-size: 4.2em;
     }
     
     .container {
@@ -1607,7 +1607,7 @@ button {
 
 @media screen and (max-width: 300px) { 
     h1.inset-text {
-        font-size: 3.5em;
+        font-size: 3.2em;
     }
 }
 
