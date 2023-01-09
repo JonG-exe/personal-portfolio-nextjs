@@ -19,6 +19,13 @@ import ExitButton from "./ExitButton.js"
 import TextContent from "../TextContent.js"
 
 
+import tlogo from "../images/t-test/logo.png"
+import t0 from "../images/t-test/t0.png"
+import t1 from "../images/t-test/t1.png"
+import t2 from "../images/t-test/t2.png"
+import t3 from "../images/t-test/t3.png"
+
+
 export default function Portfolio () {
 
     const [imageSetNum, setImageSetNum] = useState(0)
@@ -92,7 +99,10 @@ export default function Portfolio () {
             ],
             [
                 // {image: artboard_image, title: "Lucid Atom Artboard", index: 1},
-                {image: "", title: "Unrealized Opportunity", index: 1}
+                {image: t0.src, title: "Desktop View", index: 1},
+                {image: t1.src, title: "Basic Layout", index: 2},
+                {image: t2.src, title: "Mobile View", index: 3},
+                {image: t3.src, title: "Wireframe", index: 4},
             ]
         ]
 
@@ -134,7 +144,7 @@ export default function Portfolio () {
 
     }
 
-    function imageClick() {
+    function imageClick(e) {
 
         const body = document.getElementsByTagName("body")[0]
         const carousel = document.getElementsByClassName("fullscreen-carousel")[0]
@@ -145,6 +155,8 @@ export default function Portfolio () {
 
         carousel.scrollIntoView(true)
         carousel.scrollIntoView(true)
+
+        console.log("Image height: ", e.target.height)
 
     }
 
@@ -204,7 +216,7 @@ export default function Portfolio () {
                 />
 
                 <Glass 
-                    image={null}
+                    image={tlogo.src}
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Unrealized Opportunity"
@@ -245,7 +257,11 @@ export default function Portfolio () {
                             {/*--------------------------------------------------------- */}
                             
                             <div className="project_text_content">
+                                {/* Maybe we can use 'useEffect' to achieve non-glitching. Without both of the following
+                                    lines (setTimeout and addTextContent), it glitches.
+                                */}
                                 {setTimeout(addTextContent, 50)}
+                                {addTextContent}
                             </div>
 
                         </div>
