@@ -19,11 +19,12 @@ import ExitButton from "./ExitButton.js"
 import TextContent from "../TextContent.js"
 
 
-import tlogo from "../images/t-test/logo.png"
-import t0 from "../images/t-test/t0.png"
-import t1 from "../images/t-test/t1.png"
-import t2 from "../images/t-test/t2.png"
-import t3 from "../images/t-test/t3.png"
+import chatLogo from "../images/lucid-chat/logo.png"
+
+import chatDesktopView from "../images/lucid-chat/desktop-view.png"
+import chatBasicLayout from "../images/lucid-chat/basic-layout.png"
+import chatMobileView from "../images/lucid-chat/mobile-view.png"
+import chatWireframe from "../images/lucid-chat/wireframe.png"
 
 
 export default function Portfolio () {
@@ -42,7 +43,7 @@ export default function Portfolio () {
 
         if(event.target.name === "Supernova | Maritime") setImageSetNum(0)
         else if (event.target.name === "Asymmetry") setImageSetNum(1)
-        else if (event.target.name === "Unrealized Opportunity") setImageSetNum(2)
+        else if (event.target.name === "Lucid Chat App") setImageSetNum(2)
 
         if(projectShown.prevProjectShown != event.target.name) {
 
@@ -99,10 +100,10 @@ export default function Portfolio () {
             ],
             [
                 // {image: artboard_image, title: "Lucid Atom Artboard", index: 1},
-                {image: t0.src, title: "Desktop View", index: 1},
-                {image: t1.src, title: "Basic Layout", index: 2},
-                {image: t2.src, title: "Mobile View", index: 3},
-                {image: t3.src, title: "Wireframe", index: 4},
+                {image: chatDesktopView.src, title: "Desktop View", index: 1},
+                {image: chatBasicLayout.src, title: "Initial Layout", index: 2},
+                {image: chatMobileView.src, title: "Mobile View", index: 3},
+                {image: chatWireframe.src, title: "Wireframe | Example", index: 4},
             ]
         ]
 
@@ -216,10 +217,10 @@ export default function Portfolio () {
                 />
 
                 <Glass 
-                    image={tlogo.src}
+                    image={chatLogo.src}
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
-                    name="Unrealized Opportunity"
+                    name="Lucid Chat App"
                     // alt="this button leads to a currently empty project"
                 />
                 

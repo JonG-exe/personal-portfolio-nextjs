@@ -39,7 +39,10 @@ export default function Home () {
 
             <section className="container">
                 
-                <h1 class="inset-text"><div>Hello.</div>I'm Jon.G</h1>
+                <h1 className="inset-text">
+                    <div className="hello-text">Hello.</div>
+                    <div className="jon-g-text">I'm Jon.G</div>
+                </h1>
 
                 <div className="profile">
 

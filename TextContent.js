@@ -51,27 +51,12 @@ export default {
     met in a timely and efficient manner so that planning for their vacaction doesn't feel like a second 
     job. <br/><br/>`,
 
-    unrealized_opportunity : `<h3>Introduction</h3><br />
+    unrealized_opportunity : `<h3>My Inspiration</h3><br />
                                 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, eligendi cupiditate dolores asperiores ducimus molestias quam deserunt voluptas maiores odit neque cum suscipit error, ad soluta id? Cupiditate, dolores laboriosam.
-    Cumque, et? Ipsam laboriosam optio minus sint fuga, atque sed voluptas itaque quasi, distinctio quis possimus dolore ab animi quisquam perspiciatis sunt, necessitatibus fugiat facilis ducimus eligendi magnam perferendis ad?</p> <br /><br />
+    <p>When embarking on a new personal project, I usually consider functionality last. This time, I thought of both functionality and design in tandemn. I had been wanting to develop more using the Glassmorphism design style. I had also wanted to create a fully functional chat application that anyone with an internet connection could use anywhere in the world (via web sockets). I achieved what I set out to accomplish. </p> <br /><br />
 
-    <h3>Body</h3><br />
+    <h3>Glassmorphism</h3><br />
 
-    <p>Aliquam libero nostrum rem cumque! Nulla ratione tenetur iure ducimus modi voluptatibus sequi, consectetur beatae consequuntur quaerat, repellat sunt, cumque nesciunt atque libero fugiat quibusdam qui. Itaque repellat necessitatibus omnis vero.</p> <br /><br />
-
-    <ul className="content-list">
-        <li>Soluta doloremque rerum suscipit laboriosam officiis voluptate sed vel.</li>
-        <li>Quia voluptatibus magni voluptate unde in hic minus mo.</li>
-        <li>officiis quas consequatur sequi alias non, sunt cupiditate?</li>
-    </ul>
-
-    <br />
-
-    <p>Magnam officiis voluptatum molestias modi omnis illum atque dolorum esse, enim labore deserunt dolor aspernatur rem ut non libero blanditiis vel vitae incidunt doloribus asperiores voluptas. Recusandae vitae tenetur laborum.
-    Nesciunt assumenda vel quisquam veritatis magni ipsam nobis magnam, nam, a accusamus quia eligendi reprehenderit qui consectetur accusantium exercitationem repellendus iusto, voluptatum labore nemo! Nisi aliquid voluptatem ducimus autem est totam!</p> <br /><br />
-
-    <h3>Conclusion</h3><br />
-
-    <p>Minima rerum repudiandae delectus nobis culpa cupiditate quis id ea illo sapiente. Tempore iure suscipit neque repellat placeat nam aliquid culpa eveniet harum voluptatibus. Fugit inventore a officia ullam voluptatum?</p>`
+    <p>A sucker for cleanliness and clarity, I am. Glassmorphism has always been a favourite design style of mine, since the beginning of my web development journey. It seems so simple, something that is used everyday; to drink tea, to swipe right on tinder, or as a shield against mother nature's rath. And yet, in its simplicity, its beauty shines. A sucker for glass I am.</p>
+    `
 }

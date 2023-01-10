@@ -532,7 +532,7 @@ h1 {
 
 @keyframes hello_anim {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-60%);
         opacity: 0;
     }
     to {
@@ -1054,6 +1054,7 @@ button {
     width: 95%;
     transition: all 1s;
     cursor: pointer;
+    box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project_text_content {
@@ -1960,7 +1961,6 @@ button {
     top: -2%;
     left: 15.85%;
 
-    animation: jon_g_anim 4s;
 
     /* Shadows are visible under slightly transparent text color */
     /* color: rgba(119, 223, 223, 0.78); */
@@ -1969,8 +1969,13 @@ button {
     text-shadow: 9px 2px 6px var(--main-color), 0 0 0 rgba(0, 0, 0, 1);
 }
 
-.inset-text div {
+.inset-text .hello-text {
     font-size: 0.5em;
     color: rgba(227, 230, 232, 0.777);
     animation: hello_anim 2s;
+}
+
+.inset-text .jon-g-text {
+    animation: jon_g_anim 4s;
+
 }
