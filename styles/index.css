@@ -1054,7 +1054,6 @@ button {
     width: 95%;
     transition: all 1s;
     cursor: pointer;
-    box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project_text_content {
