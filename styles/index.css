@@ -1229,19 +1229,16 @@ button {
         min-width: 22px;
         width: 22px;
     } 
-    .linkedin_icon {
+    .menu_link > .linkedin_icon {
         min-width: 30px;
         width: 30px;
     }
     .menu_link > .youtube_icon {
-        /* width: 62%; */
 
         min-width: 38px;
         width: 38px;
     }
     .menu_link > .home_icon_img {
-        /* width: 115%; */
-
         min-width: 45px;
         width: 45px;
     }
@@ -1657,8 +1654,7 @@ button {
 */
 
 @media screen and (max-height: 665px) {
-    .menu_link > .facebook_icon {
-
+    /* .menu_link > .facebook_icon {
         min-height: 24px;
         height: 24px;
     } 
@@ -1667,16 +1663,43 @@ button {
         height: 25px;
     }
     .menu_link > .youtube_icon {
-        /* width: 62%; */
-
         min-height: 30px;
         height: 30px;
     }
     .menu_link > .home_icon_img {
-        /* width: 115%; */
-
         min-height: 35px;
         height: 35px;
+    } */
+
+
+    .menu_link {
+        height: 28px;
+        /* height: 100%; */
+    }
+
+    .menu_link > .facebook_icon {
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+
+    } 
+    .menu_link > .linkedin_icon {
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+
+    }
+    .menu_link > .youtube_icon {
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+
+    }
+    .menu_link > .home_icon_img {
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+
     }
 }
 
