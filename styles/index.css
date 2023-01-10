@@ -165,6 +165,7 @@ h1 {
 }
 
 .menu_link {
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     transition: all 0.4s;
@@ -172,6 +173,7 @@ h1 {
 
 .menu_link > img{
     width: 60%;
+    /* height: 37px; */
     margin-bottom: 80%;
 }
 
@@ -1090,6 +1092,15 @@ button {
         min-width: 250px;
     }
 
+    .menu_link {
+        width: 100%;
+    }
+
+    .menu_link > img {
+        width: auto;
+        height: 30px;
+    }
+
     .profile {
         position: relative;
         left: 10%;
@@ -1653,7 +1664,7 @@ button {
 * -------------------- STYLES FOR SCREEN HEIGHT ---------------------------
 */
 
-@media screen and (max-height: 665px) {
+@media screen and (max-height: 665px) and (max-width: 640px) {
     /* .menu_link > .facebook_icon {
         min-height: 24px;
         height: 24px;
@@ -1674,7 +1685,6 @@ button {
 
     .menu_link {
         height: 28px;
-        /* height: 100%; */
     }
 
     .menu_link > .facebook_icon {
