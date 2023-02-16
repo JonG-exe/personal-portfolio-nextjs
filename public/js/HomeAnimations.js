@@ -12,7 +12,7 @@ function HomeAnimations() {
          * Allow icons in last infoTile to display their name
          */
 
-        iconHover()
+        setTimeout(iconHover, 100)
 
         /**
          * Add animation to infoTiles
@@ -104,4 +104,4 @@ function iconHover() {
     }
 }
 
-setTimeout(HomeAnimations, 100)
+setTimeout(HomeAnimations, 0)

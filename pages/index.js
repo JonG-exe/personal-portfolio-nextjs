@@ -9,7 +9,7 @@ export default function Content() {
             <Home />
             <Portfolio />
 
-            <script type="text/javascript" src={homeAnimations}></script>
+            <script type="text/javascript" src={homeAnimations} defer></script>
         </div>
     )
 }
