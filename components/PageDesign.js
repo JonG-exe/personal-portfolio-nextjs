@@ -7,8 +7,6 @@ import twentyFour from "../images/24.png"
 // import jonG from "../images/jon_G.png"
 import jonG from "../images/jon_g_intro.png"
 
-console.log("hello element: ", hello)
-
 export default function PageDesign() {
     return (
         <>

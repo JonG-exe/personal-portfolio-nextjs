@@ -8,28 +8,7 @@ import image_six from "../images/adobeXD.png"
 
 export default function InfoTile(props) {
 
-    function iconHover() {
-
-        const items = ["HTML 5", "CSS 3", "Javascript", "MongoDB", "React JS", "Adobe XD"]
-        // const backgroundColors = ["rgb(255, 106, 0)", "rgba(0, 51, 128, 0.89)", "yellow", "green", "rgb(0, 145, 255)", "purple"]
-        const selectedIcon = document.getElementById("selected-icon")
-        const icons = document.getElementsByClassName("icon-image")
-
-        for(let i = 0; i < icons.length; i++) {
-    
-            icons[i].addEventListener("mouseover", () => {
-
-                selectedIcon.style.display = "flex"
-                selectedIcon.textContent = items[i]
-
-            })
-    
-            icons[i].addEventListener("mouseleave", () => {
-                selectedIcon.style.display = "none"
-                selectedIcon.textContent = ""
-            })
-        }
-    }
+    // IconHover func was moved to "HomeAnimations.js" in public folder
     
     return (
         <div className={props.className}>
