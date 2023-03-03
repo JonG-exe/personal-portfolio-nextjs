@@ -4,7 +4,7 @@
 
 function HomeAnimations() {
 
-    let playAnims = true
+    let playAnims = false
 
     if(playAnims){
 
