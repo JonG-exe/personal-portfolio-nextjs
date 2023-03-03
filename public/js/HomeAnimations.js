@@ -4,81 +4,37 @@
 
 function HomeAnimations() {
 
-    let playAnims = false
+    iconHover() // Allow icons in last infoTile to display their name
 
-    if(playAnims){
+    /* ---------------------------------------------------------------------*/ 
 
-        /**
-         * Allow icons in last infoTile to display their name
-         */
+    const timeline = gsap.timeline()
 
-        setTimeout(iconHover, 100)
+    timeline
+        .from(".hello-text", { duration: 2, x: "-60%", opacity: 0})
+        .from(".jon-g-text", { duration: 1.75, y: "60%", opacity: 0})
+        .fromTo(".neu-circle-in-circle", // <- extruded circle that the profile pic sits on
+            {boxShadow: "none"}, 
+            {duration: 0.25, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
+        )
+        .fromTo(".neu-profile-pic", 
+            {opacity: 0,}, 
+            {opacity: 1}
+        )
+        .fromTo(".CTA", { y: "100%", opacity: 0}, { y: 0, duration: 0.5,  opacity: 1, stagger: 0.2, ease: "power4.out"})
+        .fromTo(".infoTile", 
 
-        /**
-         * Add animation to infoTiles
-         */
+            { boxShadow: "none", backgroundColor: "transparent", color: "rgba(0, 0, 0, 0)", opacity: 0} , 
 
-            const infoTiles = document.getElementsByClassName("infoTile")
-            let duration = 5.3;
-            let increment = 0.2;
-
-            for(let i = 0; i < infoTiles.length; i++) {
-
-                // infoTiles[i].classList.add("infoTile_animation")
-
-                infoTiles[i].style.animation = "infoTile_load " + duration + "s " + "forwards";
-                duration = duration + increment
-
-                // console.log("InfoTiles anim: ", infoTiles[i].style.animation)
-
+            {
+                duration: 0.25, 
+                boxShadow: "-4px -4px 6px 1px white inset, 8px 6px 15px rgba(0, 0, 0, 0.17) inset", 
+                backgroundColor: "var(--main-color)", 
+                color: "rgba(67, 67, 67)", 
+                opacity: 1,
+                stagger: 0.3
             }
-
-        /**
-         * Add animation to icon_container
-         */
-
-            const iconContainer = document.querySelector(".icon-container") 
-            iconContainer.classList.add("icon-container-animation")
-
-        /**
-         * Add animation to neu circle in cirlce
-         */
-
-            const neuCircleInCircle = document.getElementsByClassName("neu-circle-in-circle")[0]
-            neuCircleInCircle.classList.add("neu-circle-anim")
-
-            // console.log("Neu circle in circle: ", neuCircleInCircle.classList)
-
-        /**
-        * Add animation to extruded profile image
-        */
-
-            const profileImage = document.getElementsByClassName("neu-profile-pic")[0]
-            profileImage.classList.add("neu-profile-pic-anim")
-        
-            //  console.log("Profile Image: ", profileImage.classList)
-
-        /**
-        * Add animation to embedded neu circle
-        */
-
-            const embeddedProfileNeu = document.getElementsByClassName("profile-pic-area")[0]
-            // embeddedProfileNeu.classList.add("profile-pic-area-animation")
-
-            // console.log("embedded Profile Neu : ", embeddedProfileNeu.classList)
-
-        /**
-        * Add animation to CTAs
-        */
-
-            const CTA_array = document.getElementsByClassName("CTA")
-
-            CTA_array[0].classList.add("CTA_one_animation")
-            CTA_array[1].classList.add("CTA_two_animation")
-
-            // console.log("CTA array: ", CTA_array)
-
-    }
+        )
 }
 
 function iconHover() {

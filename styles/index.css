@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Poppins", "Open Sans", sans-serif; */
 }
 
 :root {
@@ -47,20 +46,6 @@ scrollbar-width: none;  /* Firefox */
     border-bottom: 1px dashed black;
 }
 
-/* temp_invisible is used because the infoTile elements display 
-as the page loads. This animation prevents that by briefly 
-making it invisible so that it doesn't flash to the user.
-*/
-
-@keyframes temp_invisible {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 h1 {
     font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
@@ -82,24 +67,17 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     background-color: var(--main-color);
-    /* border: 2px solid green; */
-
 }
 
 .container {
     width: 80vw;
     height: 80vh;
     margin: 5% 0;
-    /* margin-top: 3%; */
     position: relative;
     left: -2.7%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
-    /* border: 2px solid red; */
 }
 
 .profile {
@@ -108,13 +86,8 @@ h1 {
     align-items: center;
     width: 50%;
     height: 100%;
-    
-
     position: relative;
     left: 15%;
-
-    /* border: 2px solid black; */
-
 }
 
 .profile_pic_area {
@@ -165,7 +138,6 @@ h1 {
 }
 
 .menu_link {
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     transition: all 0.4s;
@@ -173,7 +145,6 @@ h1 {
 
 .menu_link > img{
     width: 60%;
-    /* height: 37px; */
     margin-bottom: 80%;
 }
 
@@ -230,10 +201,6 @@ h1 {
     position: relative;
 }
 
-.profile-pic-area-animation {
-    animation: temp_invisible 0.5s, page_load_embedded 3.25s linear forwards;
-}
-
 .CTA {
     z-index: 1;
     width: 11.5vw;
@@ -250,22 +217,6 @@ h1 {
     font-size: 0.95em;
     font-weight: 500;
     color: white;
-}
-
-@keyframes CTA_load_anim {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    75% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
 }
 
 .CTA:hover {
@@ -290,35 +241,18 @@ h1 {
     position: absolute;
     bottom: -3%;
     left: -10%;
-
     background-image: linear-gradient(to bottom right, rgb(0, 145, 255), rgba(0, 51, 128, 0.89));
-    /* background-image: linear-gradient(to bottom right, rgb(0, 145, 255), rgb(2, 120, 210), rgba(0, 51, 128, 0.89)); */
-    animation: temp_invisible 0.5s;
-}
-
-.CTA_one_animation {
-    /* animation: CTA_load_anim 1.2s 3.5s  forwards; */
-    animation: CTA_load_anim 4.7s ease forwards;
 }
 
 .CTA_two{
-
     position: absolute;
     bottom: -3%;
     right: -10%;
     background-image: linear-gradient(to bottom right, rgba(0, 255, 186, 1), rgba(0, 51, 128, 0.89));
-    /* background-image: linear-gradient(to bottom right, rgba(0, 255, 186, 1) 10%, rgb(2, 212, 156) 30%, rgba(0, 51, 128, 0.89)); */
-    animation: temp_invisible 0.5s;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-}
-
-.CTA_two_animation {
-    /* animation: CTA_load_anim 1.4s 3.8s forwards; */
-    animation: CTA_load_anim 5.2s ease forwards;
 }
 
 
@@ -333,8 +267,6 @@ h1 {
     display: flex;
     flex-direction: column;
     color: transparent;
-
-    /* border: 2px solid orange; */
 }
 
 .infoTile_title_left {
@@ -386,8 +318,6 @@ h1 {
     box-shadow: -4px -4px 6px 1px white inset,
             8px 6px 15px rgba(0, 0, 0, 0.17) inset;
 
-    animation: temp_invisible 0.5s;
-    
 }
 
 .infoTile_brackets {
@@ -402,11 +332,10 @@ h1 {
     box-sizing: border-box;
     margin-left: 8%; 
     font-size : 0.9em;
-    /* background-color: red; */
 }
 
 
-@keyframes infoTile_load {
+/* @keyframes infoTile_load {
     0% {
         background-color: transparent;
         color: rgba(0, 0, 0, 0);
@@ -421,57 +350,24 @@ h1 {
     }
     100% {
         background-color: var(--main-color);
-        /* color: rgba(0, 0, 0, 0.5); */
         color: rgb(67, 67, 67);
 
         box-shadow: -4px -4px 6px 1px white inset,
                 8px 6px 15px rgba(0, 0, 0, 0.17) inset;
         
     }
-}
-
-/* .infoTile:hover, .infoTile:active {
-    background-color: rgba(255, 255, 255, 0.4);
-    transform: translateX(-15px);
-    transition: all 0.25s;
 } */
-
-.infoTile_animation {
-    animation: infoTile_load 5.3s forwards;
-}
 
 .infoTile_one {
     margin-left: -3%;
-    /* animation: infoTile_load 0.5s 4.8s forwards; */
-    /* animation: infoTile_load 5.3s forwards; */
 }
 
 .infoTile_two {
     margin-left: 10%;
-    /* animation: infoTile_load 0.2s 5.05s forwards; */
-    /* animation: infoTile_load 5.5s forwards; */
-
-
 }
 
 .infoTile_three {
     margin-left: -12%;
-    /* animation: infoTile_load 0.2s 5.2s forwards; */
-    /* animation: infoTile_load 5.8s forwards; */
-
-
-}
-
-@keyframes icon_container_anim {
-    0% {
-        opacity: 0;
-    }
-    93% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .icon-container{
@@ -480,12 +376,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    animation: temp_invisible 0.5s;
-}
-
-.icon-container-animation {
-    animation: temp_invisible 0.5s,
-        icon_container_anim 5.8s forwards; 
 }
 
 .icon-image {
@@ -507,9 +397,7 @@ h1 {
     width: 25%;
     position: absolute;
     top: -12%;
-    /* right: 3.5%; */
     right: 4.4%;
-    
     opacity: 0;
     animation: fade_in_anim 1.5s 0.3s forwards;
 }
@@ -521,15 +409,6 @@ h1 {
     to {
         opacity: 1;
     }
-}
-
-.hello_element {
-    width: 7%;
-    position: absolute;
-    top: 10%;
-    left: 16%;
-
-    animation: hello_anim 2s;
 }
 
 @keyframes hello_anim {
@@ -546,10 +425,8 @@ h1 {
 .jon_g_element {
     position: absolute;
     width: 22%;
-
     top: 15.5%;
     left: 16.25%;
-
     animation: jon_g_anim 4s;
 }
 
@@ -584,9 +461,7 @@ h1 {
         transform: translate(450px, -500px) rotate(45deg) scale(0.1);
     }
     97% {
-        /* transform: translate(0, 0) rotate(0deg) scale(1); */
         transform: translate(24.5%, 0) rotate(6deg) scale(1);
-
     }
     100% {
         transform: translate(24.5%, 0) rotate(17deg) scale(1);
@@ -626,25 +501,12 @@ button {
     align-items: center;
     color: grey;
     font-family: "Poppins", sans-serif;
-
     width: 20%;
     height: 10%;
     top: 7%;
     right: 7%;
-
     border-radius: 1px;
     border: 3px solid rgba(92, 92, 92, 0.3);
-
-    /* IMPORTANT: The following width, height, top 
-    and left properties are the prev dimensions 
-    that took up nearly the entire viewport which
-    we liked. */
-
-    /* width: 70%;
-    height: 70%; 
-    top: 15%;
-    left: 15%; */
-    
 }
 
 .modal_link {
@@ -679,41 +541,19 @@ button {
     box-shadow: none;
 }
 
-@keyframes page_load_extruded {
-    0% {
-        box-shadow: none;
-    }
-    95% {
-        box-shadow: none;
-    }
-    100% {
-        box-shadow: -15px -15px 13px 0px white,
-                7px 7px 11px 1px rgba(0, 0, 0, 0.21);
-    }
-}
-
 .extruded-neu:hover, .extruded-neu:focus {
     box-shadow: -4px -2px 2px 1px white,
     6px 6px 5px 1px rgba(0, 0, 0, 0.25);
     transition: all 1s;
 }
 
-/* .extruded-neu:active {
-    box-shadow: -2px -1px 2px 1px white inset,
-                1px 1px 5px 1px rgba(0, 0, 0, 0.25) inset;
-    transition: all 1s;
-} */
-
 .embedded-neu {
     box-shadow: -6px -4px 15px 4px white inset,
                 2px 3px 17px 3px rgba(0, 0, 0, 0.4) inset;
     border: 3px solid rgba(173, 169, 169, 0.05);
     transition: all 1s;
-
-    animation: temp_invisible 0.5s, page_load_embedded 3.25s linear forwards;
-
+    animation: page_load_embedded 3.25s linear forwards;
 }
-
 
 .neu-frame {
     display: flex;
@@ -732,16 +572,9 @@ button {
 .neu-circle {
     width: 22vw; 
     height: 22vw;
-
     min-width: 280px ; 
     min-height: 280px;
-
-    /* width: 55%; 
-    height: 55%; */
-
     border-radius: 50%;
-
-    /* border: 2px solid red; */
 }
 
 .neu-circle-in-circle {
@@ -753,39 +586,12 @@ button {
                 7px 7px 11px 1px rgba(0, 0, 0, 0.21);
 
     transition: all 1s;
-    animation: temp_invisible 0.5s;
-
-    /* width: 80%;
-    height: 80%; */
 }
-
-.neu-circle-anim {
-    animation: temp_invisible 0.5s,
-        page_load_extruded 4.07s ease-in forwards;
-} 
 
 .neu-profile-pic {
     pointer-events: none;
     width: 90%;
-    animation: temp_invisible 0.5s;
 }
-
-.neu-profile-pic-anim {
-    animation: temp_invisible 0.5s, pic_delay 4.8s forwards;
-}
-
-@keyframes pic_delay {
-    0% {
-        opacity: 0;
-    }
-    81% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 
 /* ------------------ Section two ---------------------- */
 
@@ -800,8 +606,6 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-    /* border: 4px solid orange;    */
 }
 
 .work_h2_text {
@@ -810,9 +614,6 @@ button {
     justify-content: center;
     margin-bottom: 3%;
     transition: all 2s;
-
-    /* border: 3px solid green; */
-
 }
 
 .work_h2_invisible {
@@ -829,7 +630,6 @@ button {
 .my_work {
     font-family: "Bahnschrift", "Poppins", sans-serif;
     font-size: 3em;
-
     color: rgba(119, 223, 223, 0.78);
     text-shadow: 9px 2px 6px #ecf0f3dd, 0 0 0 rgba(0, 0, 0, 1);
 }
@@ -848,8 +648,6 @@ button {
     justify-content: space-between;
     align-items: center;
     transition: all 1s;
-
-    /* border: 2px solid green; */
 }
 
 .work_active {
@@ -913,14 +711,10 @@ button {
     justify-content: center;
     align-items: center;
     align-self: flex-start;
-
     animation-name: page_load_embedded;
     animation-duration: 0.01s;
     animation-delay: 0s;
-
     display: none;
-
-    /* border: 2px solid blue; */
 }
 
 .CV_hidden {
@@ -951,19 +745,15 @@ button {
     min-height: 110%;
     min-height: max-content;
     margin-top: -5%;
-
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
     background-color: var(--main-color);
     border-radius: 5px;
     border: 3px solid rgba(255, 255, 255, 0.612);
-
     animation: project_neu_fade_in .4s 0s forwards;
-
 }
 
 @keyframes project_neu_fade_in {
@@ -995,11 +785,8 @@ button {
 
 .project_title {
     font-family: "Poppins", "Open Sans", sans-serif;
-    /* font-size: 2.4vw; */
     margin: 2.5% 0 0.2% ;
-
     color: #494949;
-    /* margin-bottom: 0.7em; */
 }
 
 .web_page_title {
@@ -1012,14 +799,9 @@ button {
     width: 80%;
     height: 100%;
     margin-bottom: 5%;
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* border: 4px solid orange; */
-
 }
 
 .project_slider {
@@ -1027,20 +809,14 @@ button {
     width: 100%;
     height: 75%;
     margin-bottom: 5%;
-
     display: flex;
     align-items: center;
-
-    /* border: 2px solid red; */
 }
 
 .project_image_container {
     padding: 20px 0;
-    /* min-height: 450px; */
     height: max-content;
-    /* min-height: 350px; */
     width: 100%;
-    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1048,8 +824,6 @@ button {
                 2px 3px 17px 3px rgba(0, 0, 0, 0.4) inset;
     border: 3px solid rgba(125, 112, 112, 0.05);
     transition: all 1s;
-
-    /* border: 2px solid green; */
 }
 
 .portfolio_image {
@@ -1074,7 +848,6 @@ button {
 /* -------------- Media Queries --------------- */
 
 
-
 @media screen and (max-width: 1400px) {
 
     .CV {
@@ -1083,7 +856,6 @@ button {
         width: 15.85%;
         height: 15vw;
     }
-
 }
 
 @media screen and (max-width: 1265px) {
@@ -1180,12 +952,10 @@ button {
         left: -1vw;
         height: 8%;
         width: 102vw;
-
         background-color: var(--main-color);
         box-shadow: 
         -15px -15px 25px 0px white,
         5px 5px 12px 0 rgba(0, 0, 0, 0.13);
-        /* border: 2px solid red; */
     }
 
     
@@ -1202,7 +972,6 @@ button {
         width: 10%;
         display: flex;
         justify-content: center;
-        /* border: 2px solid blue; */
     }
 
     .social_li {
@@ -1312,7 +1081,6 @@ button {
         width: 12%;
         top: 18.5%;
         left: 6%;
-
     }
     
     .jon_g_element {
@@ -1395,31 +1163,22 @@ button {
     @keyframes jon_g_anim_less_than_640px {
         0% {
             opacity: 0;
-            /* left:  */
-            /* transform: translateX(0) translateY(50%); */
-
             left: 50%;
             transform: translateX(-50%) translateY(50%);;
     
         }
         50% {
             opacity: 0;
-            /* transform: translateY(50%); */
-
             left: 50%;
             transform: translateX(-50%) translateY(50%);;
     
         }
         100% {
             opacity: 1;
-            /* transform: translateY(0%); */
-
             left: 50%;
             transform: translateX(-50%) translateY(0%);;
         }
     }
-
-
 
     .container {
         flex-direction: column;
@@ -1437,10 +1196,6 @@ button {
         min-width: 145px;
         min-height: 40px;
     }
-
-    /* #section_two {
-        min-width: 93%;
-    } */
 
     .glass {
         width: 25vw;
@@ -1652,7 +1407,6 @@ button {
 
 @media screen and (max-width: 300px) { 
     h1.inset-text {
-        /* left: 7%; */
         width: max-content;
         left: 50%;
         transform: translateX(-50%);
@@ -1665,23 +1419,6 @@ button {
 */
 
 @media screen and (max-height: 665px) and (max-width: 640px) {
-    /* .menu_link > .facebook_icon {
-        min-height: 24px;
-        height: 24px;
-    } 
-    .linkedin_icon {
-        min-height: 25px;
-        height: 25px;
-    }
-    .menu_link > .youtube_icon {
-        min-height: 30px;
-        height: 30px;
-    }
-    .menu_link > .home_icon_img {
-        min-height: 35px;
-        height: 35px;
-    } */
-
 
     .menu_link {
         height: 28px;
@@ -1777,9 +1514,6 @@ button {
     }
 
     .infoTile {
-        /* min-width: 280px;
-        min-height: 165px; */
-
         min-width: 500px;
         min-height: 280px;
     }
@@ -1846,7 +1580,6 @@ button {
     width: 80px;
     height: 20px;
     background-color: rgba(54, 54, 54, 0.5);
-    /* border-radius: 10px; */
     border-left: 2px solid rgba(0, 0, 0, 0.6);
     position: absolute;
     top: -22px;
@@ -1900,9 +1633,7 @@ button {
     width: 7px;
     height: 30px;
     background-color: rgb(141, 141, 141);
-    /* border: 1px solid black; */
     border-radius: 2px;
-
     position: absolute;
     top: 1%;
     left: 47%;
@@ -1937,19 +1668,14 @@ button {
     background-color: var(--main-color);
     position: absolute;
     top: 0;
-
     display: none; 
     justify-content: center;
     align-items: center;
-
-    
-
     background-size: cover;
 }
 
 .carousel-image {
     width: 95vh;
-
 }
 
 .switch-arrow-left-carousel {
@@ -1973,11 +1699,9 @@ button {
     bottom: 4%;
     right: 2%;
     border-radius: 3px;
-
     width: 60px;
     height: 30px;
     background-color: #BBC2C6;
-
     box-shadow: -2px -1px 2px 1px white,
     0px 1px 3px 1px rgba(0, 0, 0, 0.25);
     transition: all 0.5s;
@@ -1988,12 +1712,9 @@ button {
     font-family: "Bahnschrift", "Poppins", sans-serif;
     font-size: 6em;
     line-height: 0.7em;
-
     position: absolute;
     top: -2%;
     left: 15.85%;
-
-
     /* Shadows are visible under slightly transparent text color */
     /* color: rgba(119, 223, 223, 0.78); */
     /* color: rgba(98, 189, 182, 1); */
@@ -2004,10 +1725,4 @@ button {
 .inset-text .hello-text {
     font-size: 0.5em;
     color: rgba(227, 230, 232, 0.777);
-    animation: hello_anim 2s;
-}
-
-.inset-text .jon-g-text {
-    animation: jon_g_anim 4s;
-
 }
