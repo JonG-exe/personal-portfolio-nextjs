@@ -2,11 +2,8 @@ import React, {useState} from "react"
 import CV from "./CV.js"
 import maritime_logo from "../images/maritime-logo.png"
 import asym_logo from "../images/asym_logo.png"
-import my_work from "../images/My Work.png"
 import Glass from "./Glass"
 import switchArrow from "../images/photo-switch-arrow.png"
-import artboard_image from "../images/Artboard – 13.png"
-
 import supernova_index from "../images/Supernova/Index.png"
 import supernova_insurance_selection from "../images/Supernova/Insurance Selection.jpg"
 import supernova_health from "../images/Supernova/Health.jpg"
@@ -17,10 +14,7 @@ import asymmetry_memories from "../images/Asymmetry/Memories.jpg"
 import asymmetry_login from "../images/Asymmetry/Login.jpg"
 import ExitButton from "./ExitButton.js"
 import TextContent from "../TextContent.js"
-
-
 import chatLogo from "../images/lucid-chat/logo.png"
-
 import chatDesktopView from "../images/lucid-chat/desktop-view.png"
 import chatBasicLayout from "../images/lucid-chat/basic-layout.png"
 import chatMobileView from "../images/lucid-chat/mobile-view.png"
@@ -30,7 +24,6 @@ import chatWireframe from "../images/lucid-chat/wireframe.png"
 export default function Portfolio () {
 
     const [imageSetNum, setImageSetNum] = useState(0)
-
 
     /**
      * Tile Cl.srcick
