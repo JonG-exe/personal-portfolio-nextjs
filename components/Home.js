@@ -32,11 +32,12 @@ export default function Home () {
             const timeline = gsap.timeline()
 
                 timeline
+                    .fromTo(".content", { display: "none" }, { display: "flex" })
                     .fromTo(".hello-text", { x: "-60%", opacity: 0}, {duration: 2, x: "0%", opacity: 1})
                     .fromTo(".jon-g-text", { y: "60%", opacity: 0}, {duration: 1.75, y: "0", opacity: 1})
                     .fromTo(".neu-circle-in-circle", // <- extruded circle that the profile pic sits on
                         {boxShadow: "none"}, 
-                        {duration: 0.25, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
+                        {duration: 0.05, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
                     )
                     .fromTo(".neu-profile-pic", 
                         {opacity: 0,}, 
@@ -53,7 +54,7 @@ export default function Home () {
                             backgroundColor: "var(--main-color)", 
                             color: "rgba(67, 67, 67)", 
                             opacity: 1,
-                            stagger: 0.3
+                            stagger: 0.2
                         }
                     )
         }
