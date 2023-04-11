@@ -26,6 +26,7 @@ export default function Home () {
 
     useEffect(() => {
 
+        // Reduce Home Animation Speed for the current session if already loaded once before
         if(sessionStorage.getItem("loaded") === null) { // Should be non-existent on first load
 
             setTimeout(HomeAnimations, 0)
@@ -37,8 +38,8 @@ export default function Home () {
             setTimeout(HomeAnimations, 0)
         }
 
-        console.log("Me render")
-        
+    /*-------------- Home Animations --------------*/
+
         function HomeAnimations() {
 
             iconHover() // Allow icons in last infoTile to display their name
