@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import InfoTile from "./InfoTile";
 import profile_pic from "../images/jon-g-profile-picture.png"
 import PageDesign from "./PageDesign"
@@ -19,9 +19,25 @@ let infoTile_info = {
     }
 }
 
+
 export default function Home () {
 
+    let animDuration = null
+
     useEffect(() => {
+
+        if(sessionStorage.getItem("loaded") === null) { // Should be non-existent on first load
+
+            setTimeout(HomeAnimations, 0)
+            sessionStorage.setItem("loaded", "true") 
+
+        }
+        else {
+            animDuration = 0.001
+            setTimeout(HomeAnimations, 0)
+        }
+
+        console.log("Me render")
         
         function HomeAnimations() {
 
@@ -33,23 +49,23 @@ export default function Home () {
 
                 timeline
                     .fromTo(".content", { display: "none" }, { display: "flex" })
-                    .fromTo(".hello-text", { x: "-60%", opacity: 0}, {duration: 2, x: "0%", opacity: 1})
-                    .fromTo(".jon-g-text", { y: "60%", opacity: 0}, {duration: 1.75, y: "0", opacity: 1})
+                    .fromTo(".hello-text", { x: "-60%", opacity: 0}, {duration: animDuration || 2, x: "0%", opacity: 1})
+                    .fromTo(".jon-g-text", { y: "60%", opacity: 0}, {duration: animDuration || 1.75, y: "0", opacity: 1})
                     .fromTo(".neu-circle-in-circle", // <- extruded circle that the profile pic sits on
                         {boxShadow: "none"}, 
-                        {duration: 0.05, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
+                        {duration: animDuration || 0.05, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
                     )
                     .fromTo(".neu-profile-pic", 
                         {opacity: 0,}, 
                         {opacity: 1}
                     )
-                    .fromTo(".CTA", { y: "100%", opacity: 0}, { y: 0, duration: 0.5,  opacity: 1, stagger: 0.2, ease: "power4.out"})
+                    .fromTo(".CTA", { y: "100%", opacity: 0}, { y: 0, duration: animDuration || 0.5,  opacity: 1, stagger: 0.2, ease: "power4.out"})
                     .fromTo(".infoTile", 
 
                         { boxShadow: "none", backgroundColor: "transparent", color: "rgba(0, 0, 0, 0)", opacity: 0} , 
 
                         {
-                            duration: 0.25, 
+                            duration: animDuration || 0.25, 
                             boxShadow: "-4px -4px 6px 1px white inset, 8px 6px 15px rgba(0, 0, 0, 0.17) inset", 
                             backgroundColor: "var(--main-color)", 
                             color: "rgba(67, 67, 67)", 
@@ -69,10 +85,8 @@ export default function Home () {
             for(let i = 0; i < icons.length; i++) {
 
                 icons[i].addEventListener("mouseover", () => {
-
                     selectedIcon.style.display = "flex"
                     selectedIcon.textContent = items[i]
-
                 })
 
                 icons[i].addEventListener("mouseleave", () => {
@@ -82,10 +96,8 @@ export default function Home () {
             }
         }
 
-        setTimeout(HomeAnimations, 0)
 
     }, [])
-
 
 
     return (

@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import CV from "./CV.js"
 import maritime_logo from "../images/maritime-logo.png"
 import asym_logo from "../images/asym_logo.png"
@@ -280,7 +280,7 @@ export default function Portfolio () {
                 </button>
                 
             </div>
-                
+
         </section>
     )
 }
