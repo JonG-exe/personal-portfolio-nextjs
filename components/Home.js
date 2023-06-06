@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect } from "react"
 import InfoTile from "./InfoTile";
 import profile_pic from "../images/jon-g-profile-picture.png"
 import PageDesign from "./PageDesign"
@@ -46,34 +46,34 @@ export default function Home () {
 
             /* ---------------------------------------------------------------------*/
 
-            const timeline = gsap.timeline()
+            // const timeline = gsap.timeline()
 
-                timeline
-                    .fromTo(".content", { display: "none" }, { display: "flex" })
-                    .fromTo(".hello-text", { x: "-60%", opacity: 0}, {duration: animDuration || 2, x: "0%", opacity: 1})
-                    .fromTo(".jon-g-text", { y: "60%", opacity: 0}, {duration: animDuration || 1.75, y: "0", opacity: 1})
-                    .fromTo(".neu-circle-in-circle", // <- extruded circle that the profile pic sits on
-                        {boxShadow: "none"}, 
-                        {duration: animDuration || 0.05, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
-                    )
-                    .fromTo(".neu-profile-pic", 
-                        {opacity: 0,}, 
-                        {opacity: 1}
-                    )
-                    .fromTo(".CTA", { y: "100%", opacity: 0}, { y: 0, duration: animDuration || 0.5,  opacity: 1, stagger: 0.2, ease: "power4.out"})
-                    .fromTo(".infoTile", 
+            //     timeline
+            //         .fromTo(".content", { display: "none" }, { display: "flex" })
+            //         .fromTo(".hello-text", { x: "-60%", opacity: 0}, {duration: animDuration || 2, x: "0%", opacity: 1})
+            //         .fromTo(".jon-g-text", { y: "60%", opacity: 0}, {duration: animDuration || 1.75, y: "0", opacity: 1})
+            //         .fromTo(".neu-circle-in-circle", // <- extruded circle that the profile pic sits on
+            //             {boxShadow: "none"}, 
+            //             {duration: animDuration || 0.05, boxShadow: "-15px -15px 13px 0px white, 7px 7px 11px 1px rgba(0, 0, 0, 0.21)"}
+            //         )
+            //         .fromTo(".neu-profile-pic", 
+            //             {opacity: 0,}, 
+            //             {opacity: 1}
+            //         )
+            //         .fromTo(".CTA", { y: "100%", opacity: 0}, { y: 0, duration: animDuration || 0.5,  opacity: 1, stagger: 0.2, ease: "power4.out"})
+            //         .fromTo(".infoTile", 
 
-                        { boxShadow: "none", backgroundColor: "transparent", color: "rgba(0, 0, 0, 0)", opacity: 0} , 
+            //             { boxShadow: "none", backgroundColor: "transparent", color: "rgba(0, 0, 0, 0)", opacity: 0} , 
 
-                        {
-                            duration: animDuration || 0.25, 
-                            boxShadow: "-4px -4px 6px 1px white inset, 8px 6px 15px rgba(0, 0, 0, 0.17) inset", 
-                            backgroundColor: "var(--main-color)", 
-                            color: "rgba(67, 67, 67)", 
-                            opacity: 1,
-                            stagger: 0.2
-                        }
-                    )
+            //             {
+            //                 duration: animDuration || 0.25, 
+            //                 boxShadow: "-4px -4px 6px 1px white inset, 8px 6px 15px rgba(0, 0, 0, 0.17) inset", 
+            //                 backgroundColor: "var(--main-color)", 
+            //                 color: "rgba(67, 67, 67)", 
+            //                 opacity: 1,
+            //                 stagger: 0.2
+            //             }
+            //         )
         }
 
         function iconHover() {
@@ -153,6 +153,7 @@ export default function Home () {
                         title="Adept In"
                     />
                 </div>
+
             </section>
         </>
     )

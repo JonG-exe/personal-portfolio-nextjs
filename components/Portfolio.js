@@ -134,8 +134,6 @@ export default function Portfolio () {
 
         body.style.overflow = "scroll"
 
-
-
     }
 
     function imageClick(e) {
@@ -214,7 +212,6 @@ export default function Portfolio () {
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Lucid Chat App"
-                    // alt="this button leads to a currently empty project"
                 />
                 
             </div>
