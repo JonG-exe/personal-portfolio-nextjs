@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import Image from "next/image"
 import CV from "./CV.js"
 import maritime_logo from "../images/maritime-logo.png"
 import asym_logo from "../images/asym_logo.png"
@@ -26,7 +27,7 @@ export default function Portfolio () {
     const [imageSetNum, setImageSetNum] = useState(0)
 
     /**
-     * Tile Cl.srcick
+     * Tile Click
      */
 
     const [showWork, setShowWork] = useState({isShown: false})
@@ -152,7 +153,7 @@ export default function Portfolio () {
 
     }
 
-    setTimeout(() => {
+    useEffect(() => {
         window.addEventListener("resize", () => {
 
             const carousel = document.getElementsByClassName("fullscreen-carousel")[0]
@@ -162,29 +163,54 @@ export default function Portfolio () {
             carousel.scrollIntoView(true)
 
         })
-    }, 50)
+    }, [])
+
+    /**
+     * Deprecated / Delete - Below's setTimeout is deprecated. Using useEffect above instead. 
+     * Delete when it is ensured that the top useEffect works and isn't 
+     * bugged.
+     */
+
+    // setTimeout(() => {
+    //     window.addEventListener("resize", () => {
+
+    //         const carousel = document.getElementsByClassName("fullscreen-carousel")[0]
+    //         carousel.style.width = "100vw";
+    //         carousel.style.height = "100vh";
+            
+    //         carousel.scrollIntoView(true)
+
+    //     })
+    // }, 50)
 
 
-    function addTextContent() {
-        const project_text_content = document.getElementsByClassName("project_text_content")[0]
+    /**
+     * Switch Text
+     */
+    
+    useEffect(() => {
+        (function () {
+            const project_text_content = document.getElementsByClassName("project_text_content")[0]
+    
+            if(imageSetNum === 0) {
+                project_text_content.innerHTML = TextContent.supernova_content
+            }
+            if(imageSetNum === 1) {
+                project_text_content.innerHTML = TextContent.asymmetry_content
+            }
+            if(imageSetNum === 2) {
+                project_text_content.innerHTML = TextContent.unrealized_opportunity
+            }
+        })()
+    }, [imageSetNum])
 
-        if(imageSetNum === 0) {
-            return (project_text_content.innerHTML = TextContent.supernova_content)
-        }
-        if(imageSetNum === 1) {
-            return (project_text_content.innerHTML = TextContent.asymmetry_content)
-        }
-        if(imageSetNum === 2) {
-            return (project_text_content.innerHTML = TextContent.unrealized_opportunity)
-        }
-    }
     
 
     return (
         <section id="section_two">
             
             <h2 className={!showWork.isShown ? "work_h2_text" : "work_h2_text work_h2_invisible"}>
-                {/* <img className="work_text_image" src={my_work.src} alt="neumorphic 'my work' h2 image"></img> */}
+                {/* <Image className="work_text_image" src={my_work.src} alt="neumorphic 'my work' h2 image" />*/}
 
                 <span className="my_work">My Work</span>
             </h2>
@@ -220,46 +246,38 @@ export default function Portfolio () {
 
                 <CV showWork={showWork} />
 
-                { showWork.isShown && 
+                <div className={showWork.isShown ? "show-project active" : "show-project"}>
 
-                    <div className="show_project">
+                    <ExitButton exitElement={exitProject}/>
 
-                        <ExitButton exitElement={exitProject}/>
+                    <h2 className="project_title">{projectShown.prevProjectShown}</h2>
+                    <h3 className="web_page_title">{imagesInfo[imageSetNum][imageNum].title}</h3>
 
-                        <h2 className="project_title">{projectShown.prevProjectShown}</h2>
-                        <h3 className="web_page_title">{imagesInfo[imageSetNum][imageNum].title}</h3>
+                    <div className="project_content">
 
-                        <div className="project_content">
-
-                            <div className="project_slider">
-                                <div className="project_image_container">
-                                    <img onClick={imageClick} className="portfolio_image" src={imagesInfo[imageSetNum][imageNum].image} alt={imagesInfo[imageSetNum][imageNum].alt} />
-                                </div>
-                                
-                                <button onClick={switchImage} className="switch-arrow switch-arrow-left">
-                                    <img name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
-                                </button>
-
-                                <button onClick={switchImage} className="switch-arrow switch-arrow-right">
-                                    <img name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
-                                </button>
+                        <div className="project_slider">
+                            <div className="project_image_container">
+                                <Image width={500} height={500} onClick={imageClick} className="portfolio_image" src={imagesInfo[imageSetNum][imageNum].image} alt={imagesInfo[imageSetNum][imageNum].alt} />
                             </div>
-
-                            {/*--------------------------------------------------------- */}
                             
-                            <div className="project_text_content">
-                                {/* Maybe we can use 'useEffect' to achieve non-glitching. Without both of the following
-                                    lines (setTimeout and addTextContent), it glitches.
-                                */}
-                                {setTimeout(addTextContent, 50)}
-                                {addTextContent}
-                            </div>
+                            <button onClick={switchImage} className="switch-arrow switch-arrow-left">
+                                <Image width={500} height={500} name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                            </button>
 
+                            <button onClick={switchImage} className="switch-arrow switch-arrow-right">
+                                <Image width={500} height={500} name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                            </button>
+                        </div>
+
+                        {/*--------------------------------------------------------- */}
+                        
+                        <div className="project_text_content">
+                            {/* Finally uses useEffect to change text on switching the project (11/06/2023) */}
                         </div>
 
                     </div>
-                }
 
+                </div>
             </div>
 
             <div onClick={exitCarousel} className="fullscreen-carousel">
@@ -267,13 +285,13 @@ export default function Portfolio () {
                 <ExitButton class="exit-carousel" exitElement={exitCarousel}/>
 
                 <button onClick={switchImage} className="switch-arrow-left-carousel">
-                    <img name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                    <Image width={500} height={500} name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
                 </button>
 
-                <img className="carousel-image" onClick={(e)=>{e.stopPropagation()}} src={imagesInfo[imageSetNum][imageNum].image} alt="neumorphic clickable arrow"></img>
+                <Image width={500} height={500} className="carousel-image" onClick={(e)=>{e.stopPropagation()}} src={imagesInfo[imageSetNum][imageNum].image} alt="neumorphic clickable arrow" />
 
                 <button onClick={switchImage} className="switch-arrow-right-carousel">
-                    <img name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                    <Image width={500} height={500} name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
                 </button>
                 
             </div>

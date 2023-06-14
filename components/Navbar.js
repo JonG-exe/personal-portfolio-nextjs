@@ -4,9 +4,14 @@ import linkedin_icon from "../images/linkedin_icon.png"
 import menu_icon from "../images/menu_icon.png"
 import youtube_icon from "../images/youtube_icon.png"
 import home_icon from "../images/home_icon.png"
-// import {Link} from "react-router-dom"
 import Link from "next/link"
+import Image from "next/image"
 import Menu from "./Menu"
+import homeImg from "../images/icons/home.png"
+import aboutImg from "../images/icons/about.png"
+import servicesImg from "../images/icons/services.png"
+import portfolioImg from "../images/icons/portfolio.png"
+import contactImg from "../images/icons/contact.png"
 
 function Navbar() {
 
@@ -56,7 +61,7 @@ function Navbar() {
                     </button>
                 </li>
 
-                <li className="social_li">
+                {/* <li className="social_li">
                     <a href="https://www.facebook.com/profile.php?id=100084129372438" target="_blank" className="menu_link">
                         <img src={facebook_icon.src} className="facebook_icon" alt="extruded neumorphic facebook icon"/>
                     </a>
@@ -72,15 +77,53 @@ function Navbar() {
                     <a href="https://www.youtube.com/@dev_jono" target="_blank" className="menu_link">
                         <img src={youtube_icon.src} className="youtube_icon" alt="extruded neumorphic youtube icon"/>
                     </a>
+                </li> */}
+
+                
+
+                <li className="nav-link">
+                    <Link href="/">
+                        <Image src={homeImg} />
+                        <span>Home</span>
+                    </Link>
                 </li>
 
-                <li className="home_icon">
+                <li className="nav-link hide-link">
+                    <Link href="/about">
+                        <Image src={aboutImg} />
+                        <span>About</span>
+                    </Link>
+                </li>
+
+                <li className="nav-link">
+                    <Link href="/">
+                        <Image src={servicesImg} />
+                        <span>Services</span>
+                    </Link>
+                </li>
+
+                <li className="nav-link hide-link">
+                    <Link href="/#section_two">
+                        <Image src={portfolioImg} />
+                        <span>Portfolio</span>
+                    </Link>
+                </li>
+
+                <li className="nav-link">
+                    <Link  href="/contact">
+                        <Image src={contactImg} />
+                        <span>Contact</span>
+                    </Link>
+                </li>
+
+                {/* <li className="home_icon">
                     <Link href="/">
                         <div className="menu_link">
                             <img src={home_icon.src} className="home_icon_img" alt="extruded neumorphic home icon"/>
                         </div>
                     </Link>
-                </li>
+                </li> */}
+
             </ul>
         </nav>
     )

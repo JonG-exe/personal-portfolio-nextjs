@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image"
 
 export default function Glass(props) {
     return (
@@ -8,7 +9,6 @@ export default function Glass(props) {
             className={props.className ? props.className : "glass"}
         >
             <img className="work_logo" src={props.image} alt={props.alt}/> 
-
             
         </button>
     )

@@ -86,6 +86,7 @@ export default function Home () {
             for(let i = 0; i < icons.length; i++) {
 
                 icons[i].addEventListener("mouseover", () => {
+                    // selectedIcon.style.backgroundColor = backgroundColors[i]
                     selectedIcon.style.display = "flex"
                     selectedIcon.textContent = items[i]
                 })
@@ -108,8 +109,14 @@ export default function Home () {
             <section className="container">
                 
                 <h1 className="inset-text">
-                    <div className="hello-text">Hello.</div>
-                    <div className="jon-g-text">I'm Jon.G</div>
+                    {/* <span style={{display: "block"}} className="hello-text">Hello.</span>
+                    <span className="jon-g-text">I'm Jon.G</span> */}
+
+                    {/* <span style={{display: "block"}} className="hello-text">Web Developer</span>
+                    <span className="jon-g-text">Jon.G</span> */}
+
+                    <span style={{display: "block"}} className="hello-text">Web Design That</span>
+                    <span className="jon-g-text">Converts</span>
                 </h1>
 
                 <div className="profile">
@@ -124,7 +131,7 @@ export default function Home () {
                             <button className="CTA CTA_one">Get In Touch</button>
                         </Link>
                         
-                        <a href="#section_two" className="CTA CTA_two">My Portfolio</a>
+                        <a href="#section_two" className="CTA CTA_two">See Portfolio</a>
                         
                     </div>
                 </div>
