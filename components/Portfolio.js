@@ -81,23 +81,23 @@ export default function Portfolio () {
     const imagesInfo = 
         [
             [
-                {image: supernova_index.src, title: "Home Page", index: 1},
-                {image: supernova_insurance_selection.src, title: "Insurance Selection Page", index: 2},
-                {image: supernova_home_and_car.src, title: "Home & Car Insurance", index: 3},
-                {image: supernova_health.src, title: "Health Insurance", index: 4},
-                {image: supernova_pension.src, title: "Pension", index: 5},
+                {image: supernova_index, title: "Home Page", index: 1},
+                {image: supernova_insurance_selection, title: "Insurance Selection Page", index: 2},
+                {image: supernova_home_and_car, title: "Home & Car Insurance", index: 3},
+                {image: supernova_health, title: "Health Insurance", index: 4},
+                {image: supernova_pension, title: "Pension", index: 5},
             ],
             [
-                {image: asymmetry_index.src, title: "Home Page", index: 1},
-                {image: asymmetry_memories.src, title: "Memory Log", index: 2},
-                {image: asymmetry_login.src, title: "Login page", index: 3},
+                {image: asymmetry_index, title: "Home Page", index: 1},
+                {image: asymmetry_memories, title: "Memory Log", index: 2},
+                {image: asymmetry_login, title: "Login page", index: 3},
             ],
             [
                 // {image: artboard_image, title: "Lucid Atom Artboard", index: 1},
-                {image: chatDesktopView.src, title: "Desktop View", index: 1},
-                {image: chatBasicLayout.src, title: "Initial Layout", index: 2},
-                {image: chatMobileView.src, title: "Mobile View", index: 3},
-                {image: chatWireframe.src, title: "Wireframe | Example", index: 4},
+                {image: chatDesktopView, title: "Desktop View", index: 1},
+                {image: chatBasicLayout, title: "Initial Layout", index: 2},
+                {image: chatMobileView, title: "Mobile View", index: 3},
+                {image: chatWireframe, title: "Wireframe | Example", index: 4},
             ]
         ]
 
@@ -257,15 +257,15 @@ export default function Portfolio () {
 
                         <div className="project_slider">
                             <div className="project_image_container">
-                                <Image width={500} height={500} onClick={imageClick} className="portfolio_image" src={imagesInfo[imageSetNum][imageNum].image} alt={imagesInfo[imageSetNum][imageNum].alt} />
+                                <Image onClick={imageClick} className="portfolio_image" src={imagesInfo[imageSetNum][imageNum].image} alt={imagesInfo[imageSetNum][imageNum].alt} />
                             </div>
                             
                             <button onClick={switchImage} className="switch-arrow switch-arrow-left">
-                                <Image width={500} height={500} name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                                <Image name="switchImageLeft" src={switchArrow} alt="neumorphic clickable arrow"/>
                             </button>
 
                             <button onClick={switchImage} className="switch-arrow switch-arrow-right">
-                                <Image width={500} height={500} name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                                <Image name="switchImageRight" src={switchArrow} alt="neumorphic clickable arrow"/>
                             </button>
                         </div>
 
@@ -285,13 +285,13 @@ export default function Portfolio () {
                 <ExitButton class="exit-carousel" exitElement={exitCarousel}/>
 
                 <button onClick={switchImage} className="switch-arrow-left-carousel">
-                    <Image width={500} height={500} name="switchImageLeft" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                    <Image name="switchImageLeft" src={switchArrow} alt="neumorphic clickable arrow"/>
                 </button>
 
-                <Image width={500} height={500} className="carousel-image" onClick={(e)=>{e.stopPropagation()}} src={imagesInfo[imageSetNum][imageNum].image} alt="neumorphic clickable arrow" />
+                <Image className="carousel-image" onClick={(e)=>{e.stopPropagation()}} src={imagesInfo[imageSetNum][imageNum].image} alt="neumorphic clickable arrow" />
 
                 <button onClick={switchImage} className="switch-arrow-right-carousel">
-                    <Image width={500} height={500} name="switchImageRight" src={switchArrow.src} alt="neumorphic clickable arrow"/>
+                    <Image name="switchImageRight" src={switchArrow} alt="neumorphic clickable arrow"/>
                 </button>
                 
             </div>

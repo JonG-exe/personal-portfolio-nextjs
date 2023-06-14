@@ -106,7 +106,7 @@ export default function Home () {
         <>
             <PageDesign />
 
-            <section className="container">
+            <section id="home-section" className="container">
                 
                 <h1 className="inset-text">
                     {/* <span style={{display: "block"}} className="hello-text">Hello.</span>

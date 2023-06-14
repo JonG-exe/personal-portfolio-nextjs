@@ -84,6 +84,8 @@ h1 {
     align-items: center;
 }
 
+
+
 .profile {
     display: flex;
     justify-content: center;
@@ -859,6 +861,7 @@ button {
 
 .portfolio_image {
     width: 95%;
+    height: auto;
     transition: all 1s;
     cursor: pointer;
 }
@@ -941,6 +944,7 @@ button {
 }
 
 @media screen and (max-width: 950px) {
+
 
     #not-mobile-friendly {
         position: absolute;
@@ -1623,7 +1627,7 @@ button {
 }
 
 .exit-button {
-    z-index: 6;
+    z-index: 2;
     box-sizing: content-box;
     position: absolute;
     top: 0.3%;
@@ -1692,6 +1696,7 @@ button {
 
 .carousel-image {
     width: 95vh;
+    height: auto;
 }
 
 .switch-arrow-left-carousel {
