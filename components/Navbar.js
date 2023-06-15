@@ -7,6 +7,7 @@ import home_icon from "../images/home_icon.png"
 import Link from "next/link"
 import Image from "next/image"
 import Menu from "./Menu"
+import Logo from "../images/logo.png"
 import homeImg from "../images/icons/home.png"
 import aboutImg from "../images/icons/about.png"
 import servicesImg from "../images/icons/services.png"
@@ -83,7 +84,7 @@ function Navbar() {
 
                 <li className="nav-link">
                     <Link href="/">
-                        <Image src={homeImg} />
+                        <Image id="nav-home-logo" src={Logo} />
                         <span>Home</span>
                     </Link>
                 </li>
@@ -96,7 +97,7 @@ function Navbar() {
                 </li>
 
                 <li className="nav-link">
-                    <Link href="/">
+                    <Link href="/services">
                         <Image src={servicesImg} />
                         <span>Services</span>
                     </Link>

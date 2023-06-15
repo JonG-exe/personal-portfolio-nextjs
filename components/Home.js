@@ -106,20 +106,20 @@ export default function Home () {
         <>
             <PageDesign />
 
-            <section id="home-section" className="container">
-                
-                <h1 className="inset-text">
-                    {/* <span style={{display: "block"}} className="hello-text">Hello.</span>
-                    <span className="jon-g-text">I'm Jon.G</span> */}
-
-                    {/* <span style={{display: "block"}} className="hello-text">Web Developer</span>
-                    <span className="jon-g-text">Jon.G</span> */}
-
-                    <span style={{display: "block"}} className="hello-text">Web Design That</span>
-                    <span className="jon-g-text">Converts</span>
-                </h1>
+            <section className="container">
 
                 <div className="profile">
+
+                    <h1 className="inset-text">
+                        {/* <span style={{display: "block"}} className="hello-text">Hello.</span>
+                        <span className="jon-g-text">I'm Jon.G</span> */}
+
+                        {/* <span style={{display: "block"}} className="hello-text">Web Developer</span>
+                        <span className="jon-g-text">Jon.G</span> */}
+
+                        <span style={{display: "block"}} className="hello-text">Web Design That</span>
+                        <span className="jon-g-text">Converts</span>
+                    </h1>
 
                     <div className="profile-pic-area neu neu-circle embedded-neu">
                         

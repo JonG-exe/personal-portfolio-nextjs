@@ -44,11 +44,6 @@ body::-webkit-scrollbar {
     border-bottom: 1px dashed black;
 }
 
-h1 {
-    font-family: sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
-        "Trebuchet MS";
-}
-
 .content {
     width: 100%;
     height: 100%;
@@ -74,9 +69,11 @@ h1 {
 }
 
 .container {
-    width: 80vw;
+    box-sizing: border-box;
+    width: 100vw;
     height: 80vh;
-    margin: 5% 0;
+    max-height: 700px;
+    margin: 5% 75px 0 0;
     position: relative;
     left: -2.7%;
     display: flex;
@@ -88,10 +85,11 @@ h1 {
 
 .profile {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
+    height: 90vh;
     position: relative;
     left: 15%;
 }
@@ -132,6 +130,7 @@ h1 {
     box-shadow: -15px -15px 25px 0px white, 15px 15px 25px 0 rgba(0, 0, 0, 0.28);
 }
 
+
 .navbar > ul {
     height: 100%;
     display: flex;
@@ -162,6 +161,10 @@ h1 {
     height: 100%;
     aspect-ratio: 3/2;
     object-fit: contain;
+}
+
+#nav-home-logo {
+   width: 40px;
 }
 
 .nav-link a {
@@ -228,6 +231,31 @@ h1 {
 }
 
 /* -------------------------- Content Area ----------------------- */
+
+.inset-text {
+    margin-top: -70px;
+    margin-bottom: 25px;
+    z-index: 2;
+    font-family: "Bahnschrift", "Poppins", sans-serif;
+    font-size: 6.5em;
+    letter-spacing: 0.005em;
+    line-height: 0.7em;
+    /* Shadows are visible under slightly transparent text color */
+    color: rgba(203, 145, 213, 0.78);
+    text-shadow: 9px 2px 6px var(--main-color), 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.inset-text .hello-text {
+    font-size: 0.5em;
+    color: rgba(227, 230, 232, 0.777);
+}
+
+@media screen and (max-width: 640px) {
+    .inset-text {
+        font-size: 5em;
+    }
+}
+
 
 @keyframes page_load_embedded {
     0% {
@@ -308,7 +336,7 @@ h1 {
 
 .infoTiles {
     width: 35%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     color: transparent;
@@ -482,7 +510,7 @@ h1 {
     bottom: 20%;
     left: 10%;
     width: 20%;
-    animation: rocket_anim 15s forwards;
+    animation: rocket_anim 7s forwards;
 }
 
 @keyframes rocket_anim {
@@ -490,7 +518,7 @@ h1 {
         transform: translate(450px, -500px) rotate(45deg) scale(0.1);
     }
     97% {
-        transform: translate(24.5%, 0) rotate(6deg) scale(1);
+        transform: translate(24.5%, 0) rotate(17deg) scale(1);
     }
     100% {
         transform: translate(24.5%, 0) rotate(17deg) scale(1);
@@ -564,8 +592,6 @@ button {
 .extruded-neu {
     box-shadow: -2px -1px 2px 1px white, 2px 1px 3px 1px rgba(0, 0, 0, 0.25);
     transition: all 1s;
-
-    box-shadow: none;
 }
 
 .extruded-neu:hover,
@@ -626,7 +652,7 @@ button {
     margin-top: 5%;
     margin-bottom: 1.5%;
     margin-left: -5%;
-    min-height: 70vh;
+    min-height: 60vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -772,7 +798,7 @@ button {
     align-items: center;
     background-color: var(--main-color);
     border-radius: 5px;
-    border: 3px solid rgba(255, 255, 255, 0.612);
+    /* border: 3px solid rgba(255, 255, 255, 0.612); */
     /* animation: project_neu_fade_in 0.4s 0s forwards; */
 
 
@@ -786,8 +812,10 @@ button {
     pointer-events: initial;
     position: relative;
     transition: all 0.4s;
-    box-shadow: -6px -6px 25px 8px #ffffff,
-        2px 20px 17px 3px rgba(0, 0, 0, 0.4);
+    /* box-shadow: -6px -6px 25px 8px #ffffff,
+        2px 20px 17px 3px rgba(0, 0, 0, 0.4); */
+    box-shadow: -3px -3px 2px 0px #ffffff,
+    2px 2px 10px 0px rgba(0, 0, 0, 0.3);
     opacity: 1;
 }
 
@@ -806,13 +834,13 @@ button {
 .switch-arrow-left {
     position: absolute;
     cursor: pointer;
-    left: -10%;
+    left: -4%;
 }
 
 .switch-arrow-right {
     position: absolute;
     cursor: pointer;
-    right: -10%;
+    right: -4%;
     transform: rotate(180deg);
 }
 
@@ -843,24 +871,26 @@ button {
     height: 75%;
     margin-bottom: 5%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .project_image_container {
     padding: 20px 0;
     height: max-content;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -6px -4px 15px 4px white inset,
-        2px 3px 17px 3px rgba(0, 0, 0, 0.4) inset;
-    border: 3px solid rgba(125, 112, 112, 0.05);
+    /* box-shadow: -6px -4px 15px 4px white inset,
+        2px 3px 17px 3px rgba(0, 0, 0, 0.4) inset; */
+    /* border: 3px solid rgba(125, 112, 112, 0.05); */
     transition: all 1s;
 }
 
 .portfolio_image {
     width: 95%;
+    border-radius: 5px;
     height: auto;
     transition: all 1s;
     cursor: pointer;
@@ -909,12 +939,6 @@ button {
         left: 10%;
     }
 
-    h1.inset-text {
-        top: 0%;
-        left: 15%;
-        font-size: 4.7em;
-    }
-
     .CTA {
         min-width: 150px;
         min-height: 41px;
@@ -945,6 +969,9 @@ button {
 
 @media screen and (max-width: 950px) {
 
+    .container {
+        max-height: 1300px;
+    }
 
     #not-mobile-friendly {
         position: absolute;
@@ -958,12 +985,6 @@ button {
 
     .jon_g_element {
         top: 22.5%;
-    }
-
-    h1.inset-text {
-        top: 13%;
-        left: 15%;
-        font-size: 5em;
     }
 
     .container {
@@ -1001,8 +1022,19 @@ button {
         justify-content: center;
     }
 
+    .nav-link {
+        height: 80%;
+    }
+
+    .nav-link a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .nav-link img {
         width: 21px;
+        margin-bottom: 0;
     }
 
     .nav-link:last-child img {
@@ -1084,9 +1116,9 @@ button {
 
     #section_two {
         min-width: 90%;
-        min-height: 82vh;
+        /* min-height: 82vh; */
         margin-left: 0%;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     .glass {
@@ -1130,12 +1162,6 @@ button {
         left: 6.5%;
     }
 
-    h1.inset-text {
-        top: 15%;
-        left: 10%;
-        font-size: 4.5em;
-    }
-
     .neu_grid {
         display: none;
     }
@@ -1175,6 +1201,9 @@ button {
 }
 
 @media screen and (max-width: 640px) {
+
+    
+
     .hello_element {
         width: 12%;
         top: 12.5%;
@@ -1187,16 +1216,6 @@ button {
         left: 30%;
     }
 
-    h1.inset-text {
-        top: 10%;
-        font-size: 4.2em;
-
-        width: max-content;
-        left: 50%;
-        transform: translateX(-50%);
-
-        animation: jon_g_anim_less_than_640px 4s;
-    }
 
     @keyframes jon_g_anim_less_than_640px {
         0% {
@@ -1220,11 +1239,11 @@ button {
         flex-direction: column;
         width: 100%;
         height: 100%;
-        margin-top: 30%;
+        margin-right: 0;
     }
 
+
     .profile {
-        margin-bottom: 5%;
         left: 0;
     }
 
@@ -1301,14 +1320,6 @@ button {
         left: 20%;
     }
 
-    h1.inset-text {
-        font-size: 4.2em;
-    }
-
-    .container {
-        margin-top: 35%;
-    }
-
     .infoTile_one,
     .infoTile_two,
     .infoTile_three {
@@ -1329,10 +1340,6 @@ button {
 
     .work_text_image {
         width: 160px;
-    }
-
-    h1.inset-text {
-        font-size: 4em;
     }
 
     .work {
@@ -1380,20 +1387,17 @@ button {
         left: 18%;
     }
 
-    h1.inset-text {
-        font-size: 4.2em;
-    }
-
-    .container {
-        margin-top: 47%;
-    }
-
     .project_title {
         margin-top: 14%;
     }
 }
 
 @media screen and (max-width: 350px) {
+
+    .inset-text {
+        font-size: 4em;
+    }
+
     .hello_element {
         width: 17%;
         top: 12%;
@@ -1404,14 +1408,6 @@ button {
         width: 53%;
         top: 16%;
         left: 20%;
-    }
-
-    h1.inset-text {
-        font-size: 4em;
-    }
-
-    .container {
-        margin-top: 50%;
     }
 
     .neu-circle {
@@ -1436,14 +1432,6 @@ button {
     }
 }
 
-@media screen and (max-width: 300px) {
-    h1.inset-text {
-        width: max-content;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3.2em;
-    }
-}
 
 /*
 * -------------------- STYLES FOR SCREEN HEIGHT ---------------------------
@@ -1727,23 +1715,6 @@ button {
     transition: all 0.5s;
 }
 
-.inset-text {
-    z-index: 2;
-    font-family: "Bahnschrift", "Poppins", sans-serif;
-    font-size: 6em;
-    line-height: 0.7em;
-    position: absolute;
-    top: -2%;
-    left: 15.85%;
-    /* Shadows are visible under slightly transparent text color */
-    color: rgba(203, 145, 213, 0.78);
-    text-shadow: 9px 2px 6px var(--main-color), 0 0 0 rgba(0, 0, 0, 1);
-}
-
-.inset-text .hello-text {
-    font-size: 0.5em;
-    color: rgba(227, 230, 232, 0.777);
-}
 
 
 /* ----------------------------------------- Accordion ---------------------------------------- */
@@ -1839,11 +1810,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-
-/* h1, h2 {
-    font-size: 2em;
-    font-family: "Poppins", "Bahnschrift", sans-serif;
-} */
 
 .h2-design-process {
     width: 100vw;
@@ -2045,6 +2011,7 @@ footer {
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 } */
 
+/* 
 @keyframes moveline {
     0% {
         height: 0;
@@ -2052,15 +2019,14 @@ footer {
     100% {
         height: 100%;
     }
-}
+} */
 
 .container-timeline {
     position: relative;
     padding: 10px 50px;
     padding: 10px 20px;
     width: 100%;
-    animation: movedown 1s linear forwards;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 @media screen and (max-width: 950px) {
@@ -2068,17 +2034,6 @@ footer {
         width: 100%;
     }
     
-}
-
-@keyframes movedown {
-    from {
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 .container-timeline:nth-child(1) {
@@ -2230,4 +2185,35 @@ footer {
 
 .text-box p, .text-box small{
     padding-left: 3px;
+}
+
+
+/* ----------------------------------------- Services ---------------------------------------- */
+
+.service-pricing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan {
+    width: 30%;
+    min-height: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(201, 201, 201);
+    border: 2px solid grey;
 }
