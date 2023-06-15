@@ -59,6 +59,8 @@ body::-webkit-scrollbar {
 }
 
 .app {
+    box-sizing: border-box;
+    padding-right: 80px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -73,7 +75,7 @@ body::-webkit-scrollbar {
     width: 100vw;
     height: 80vh;
     max-height: 700px;
-    margin: 5% 75px 0 0;
+    margin: 5% 0;
     position: relative;
     left: -2.7%;
     display: flex;
@@ -116,9 +118,9 @@ body::-webkit-scrollbar {
     z-index: 3;
     /* width: 4.8%; */
     /* width: 90px; */
-    width: 90px;
+    width: 75px;
     min-width: 75px;
-    max-width: 90px;
+    max-width: 75px;
 
     position: fixed;
     top: 0;
@@ -246,7 +248,7 @@ body::-webkit-scrollbar {
 }
 
 .inset-text .hello-text {
-    font-size: 0.5em;
+    font-size: 0.535em;
     color: rgba(227, 230, 232, 0.777);
 }
 
@@ -651,7 +653,6 @@ button {
     width: 70%;
     margin-top: 5%;
     margin-bottom: 1.5%;
-    margin-left: -5%;
     min-height: 60vh;
     position: relative;
     display: flex;
@@ -968,6 +969,10 @@ button {
 }
 
 @media screen and (max-width: 950px) {
+
+    .app {
+        padding-right: 0;
+    }
 
     .container {
         max-height: 1300px;
@@ -1805,7 +1810,7 @@ footer {
 /* --------------------------------- Design Process ------------------------------------- */
 
 .design-process {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1885,7 +1890,7 @@ footer {
 }
 
 .process-right {
-    margin-top: 20px;
+    margin-top: 55px;
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -1949,17 +1954,6 @@ footer {
 .step-6 {
     bottom: 20%;
     right: -10%;
-}
-
-.step-6 img {
-    transform: translate(5px, 6px);
-    width: 80%;
-    height: auto;
-}
-
-
-.step-6 h4 {
-    transform: translate(2px, -27px);
 }
 
 @media screen and (max-width: 1180px) {
@@ -2071,12 +2065,13 @@ footer {
 }
 
 .container-timeline img {
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
+    /* position: absolute; */
+    width: 28px;
+    margin: 0 10px 0 -10px;
+    /* border-radius: 50%; */
+    /* right: -20px; */
+    /* top: 32px; */
+    /* z-index: 10; */
 }
 
 .tl-right-container img {
@@ -2134,16 +2129,12 @@ footer {
         width: 72vw;
         height: 72vw;
     }
-
-    .step-6 h4 {
-        transform: translate(2px, -15px);
-    }
 }
 
 @media screen and (max-width: 600px) {
     
     .timeline {
-        margin: 50px auto;
+        margin: 0 auto 50px auto;
     }
     .timeline::after {
         left: 31px;
@@ -2181,6 +2172,8 @@ footer {
     max-width: max-content;
     padding: 12px 40px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .text-box p, .text-box small{

@@ -1,6 +1,4 @@
-// import { Link } from "react-router-dom"
 import Link from "next/link"
-
 
 function Menu (props) {
 
@@ -9,8 +7,8 @@ function Menu (props) {
             {/* <Link href='/SEO' className="modal_link">SEO Page</Link> */}
 
             <p>Coming Soon!</p>
-            
-            </div>
+        
+        </div>
     )
 }
 
