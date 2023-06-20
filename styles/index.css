@@ -1869,9 +1869,11 @@ footer {
 }
 
 .site-links a {
+    margin: 0 10px;
     font-size: 1.3em;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+    text-align: center;
 }
 
 .site-links a:visited {

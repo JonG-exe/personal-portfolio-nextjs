@@ -1,11 +1,10 @@
 import Image from "next/image"
-import Corporate from "../images/corporate.png"
 
 export default function Services () {
     return (
         <section className="services-pricing">
 
-            <div className="price-heading">
+            {/* <div className="price-heading">
                 <h1>
                     <small>Web Development</small>
                     <span>Pricing</span>
@@ -16,9 +15,6 @@ export default function Services () {
             
 
             <div className="price-container">
-                {/* <Image src={Corporate} style={{
-                    width: "480px", height: "auto"
-                }}/> */}
 
                 <div className="plan-container">
                     <div className="plan basic">
@@ -90,7 +86,7 @@ export default function Services () {
                 </div>
                 
 
-            </div>
+            </div> */}
 
         </section>
     )

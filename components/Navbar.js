@@ -75,12 +75,12 @@ function Navbar() {
                     </Link>
                 </li> */}
 
-                <li className="nav-link">
+                {/* <li className="nav-link">
                     <Link href="/services">
                         <Image src={servicesImg} />
                         <span>Services</span>
                     </Link>
-                </li>
+                </li> */}
 
                 <li className="nav-link hide-link">
                     <Link href="/#section_two">
