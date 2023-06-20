@@ -17,7 +17,8 @@ export default function Content() {
             {/* <title>Trinidad Web Developer | Lucid Atom</title> */}
             <title>Website Design In Trinidad | Lucid Atom</title>
             <link rel="icon" href="/favicon.ico" />
-            <meta name="description" content="Jonathan Gray is a local freelance website designer in Trinidad and Tobago who specializes in website design (UI/UX design), web development and search engine optimization (SEO)."/>
+            {/* <meta name="description" content="Jonathan Gray is a local freelance website designer in Trinidad and Tobago who specializes in website design (UI/UX design), web development and search engine optimization (SEO)."/> */}
+            <meta name="description" content="Website designer, Jonathan Gray, is a local freelance web developer in Trinidad and Tobago who specializes in website design (UI/UX design), web development and search engine optimization (SEO)."/>
             <meta name="keywords" content="web developer, web development, website design trinidad, web design, internet design, designed website, web designer, designer, web developer trinidad, web developer in trinidad, trinidad web design, seo, seo expert, search engine optimization, digital marketing, apps web" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

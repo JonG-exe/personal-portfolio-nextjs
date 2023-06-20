@@ -128,7 +128,9 @@ export default function Home () {
                         </div>
 
                         <Link href="/contact">
-                            <button className="CTA CTA_one">Get In Touch</button>
+                            {/* <button className="CTA CTA_one">Get In Touch</button> */}
+                            {/* <button className="CTA CTA_one">Build My Website</button> */}
+                            <button className="CTA CTA_one">Design My Website</button>
                         </Link>
                         
                         <a href="#section_two" className="CTA CTA_two">See Portfolio</a>

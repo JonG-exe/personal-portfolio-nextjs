@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react"
-import facebook_icon from "../images/facebook_icon.png"
-import linkedin_icon from "../images/linkedin_icon.png"
-import menu_icon from "../images/menu_icon.png"
-import youtube_icon from "../images/youtube_icon.png"
+// import facebook_icon from "../images/facebook_icon.png"
+// import linkedin_icon from "../images/linkedin_icon.png"
+// import menu_icon from "../images/menu_icon.png"
+// import youtube_icon from "../images/youtube_icon.png"
 import home_icon from "../images/home_icon.png"
 import Link from "next/link"
 import Image from "next/image"
@@ -73,14 +73,14 @@ function Navbar() {
                         <Image src={aboutImg} />
                         <span>About</span>
                     </Link>
-                </li>
+                </li> */}
 
                 <li className="nav-link">
                     <Link href="/services">
                         <Image src={servicesImg} />
                         <span>Services</span>
                     </Link>
-                </li> */}
+                </li>
 
                 <li className="nav-link hide-link">
                     <Link href="/#section_two">

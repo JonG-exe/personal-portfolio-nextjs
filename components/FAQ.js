@@ -11,7 +11,7 @@ const FAQ = () => {
             </h2>
 
             <Accordion 
-                question="How long will it take to build my website?" 
+                question="How long will it take to design and build my website?" 
                 answer="This depends on the complexity of the design, features, number of pages and complexity of the back-end of your site. Basic sites can take 2 weeks, whereas an e-commerce site can take upto one (1) month. Larger sites/apps may take one (1) month to several months. The duration of delivery of the site is also highly dependent on the business owner providing necessary content, documents and feedback."
             />
 
