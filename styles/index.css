@@ -1863,7 +1863,7 @@ footer {
 }
 
 .site-links {
-    width: 500px;
+    max-width: max-content;
     display: flex;
     justify-content: space-between;
 }
