@@ -13,16 +13,16 @@ function Menu (props) {
         <div className="menu_modal" style={{"display" : ( props.menuActive ? "flex" : "none" )}}>
             {/* <Link href='/SEO' className="modal_link">SEO Page</Link> */}
 
-            {/* <p>Coming Soon!</p> */}
+            <p>Coming Soon!</p>
 
-            <ul>
+            {/* <ul>
 
-                {/* <li className="nav-link hide-link">
+                <li className="nav-link hide-link">
                     <Link href="/about">
                         <Image src={aboutImg} />
                         <span>About</span>
                     </Link>
-                </li> */}
+                </li>
 
                 <li className="nav-link">
                     <Link href="/services">
@@ -45,15 +45,15 @@ function Menu (props) {
                     </Link>
                 </li>
 
-                {/* <li className="home_icon">
+                <li className="home_icon">
                     <Link href="/">
                         <div className="menu_link">
                             <img src={home_icon.src} className="home_icon_img" alt="extruded neumorphic home icon"/>
                         </div>
                     </Link>
-                </li> */}
+                </li>
 
-                {/* <li className="social_li hide-link">
+                <li className="social_li hide-link">
                     <a href="https://www.facebook.com/profile.php?id=100084129372438" target="_blank" className="menu_link">
                         <img src={facebook_icon.src} className="facebook_icon" alt="extruded neumorphic facebook icon"/>
                     </a>
@@ -69,9 +69,9 @@ function Menu (props) {
                     <a href="https://www.youtube.com/@dev_jono" target="_blank" className="menu_link">
                         <img src={youtube_icon.src} className="youtube_icon" alt="extruded neumorphic youtube icon"/>
                     </a>
-                </li> */}
+                </li>
 
-            </ul>
+            </ul> */}
         
         </div>
     )
