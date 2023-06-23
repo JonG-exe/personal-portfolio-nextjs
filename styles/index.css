@@ -309,7 +309,7 @@ body::-webkit-scrollbar {
 .CTA_one {
     position: absolute;
     bottom: -3%;
-    left: -10%;
+    left: -12.5%;
     background-image: linear-gradient(
         to bottom right,
         rgb(0, 145, 255),
@@ -320,7 +320,7 @@ body::-webkit-scrollbar {
 .CTA_two {
     position: absolute;
     bottom: -3%;
-    right: -10%;
+    right: -12.5%;
     background-image: linear-gradient(
         to bottom right,
         rgba(0, 255, 186, 1),
@@ -1212,8 +1212,16 @@ button {
     }
 
     .CTA {
-        min-width: 120px;
+        min-width: 155px;
         min-height: 35px;
+    }
+
+    .CTA_one {
+        left: -20%;
+    }
+
+    .CTA_two {
+        right: -20%;
     }
 
     #section_two {
@@ -1226,8 +1234,6 @@ button {
 }
 
 @media screen and (max-width: 640px) {
-
-    
 
     .hello_element {
         width: 12%;
@@ -1273,8 +1279,16 @@ button {
     }
 
     .CTA {
-        min-width: 145px;
+        min-width: 165px;
         min-height: 40px;
+    }
+
+    .CTA_one {
+        left: -12.5%;
+    }
+
+    .CTA_two {
+        right: -12.5%;
     }
 
     .glass {
@@ -1441,9 +1455,9 @@ button {
     }
 
     .CTA {
-        min-width: 115px;
+        min-width: 130px;
         min-height: 32px;
-        font-size: 0.82em;
+        font-size: 0.79em;
     }
 
     .infoTile {
