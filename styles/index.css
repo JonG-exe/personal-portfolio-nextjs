@@ -1438,7 +1438,7 @@ button {
 @media screen and (max-width: 350px) {
 
     .inset-text {
-        font-size: 4em;
+        font-size: 3.85em;
     }
 
     .hello_element {
