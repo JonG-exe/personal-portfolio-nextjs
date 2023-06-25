@@ -75,7 +75,8 @@ body::-webkit-scrollbar {
 .container {
     box-sizing: border-box;
     width: 100vw;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 100%;
     max-height: 700px;
     /* margin: 5% 0; */
     position: relative;
