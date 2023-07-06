@@ -78,6 +78,7 @@ input:focus {
 
 .contact_icon {
     width: 70%;
+    height: auto;
     transform: translate(3px, -12px);
 }
 
