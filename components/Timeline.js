@@ -32,7 +32,7 @@ const Timeline = () => {
                     The website design process (also refered to as web design, internet design, or web development process) begins by understanding the desired outcomes of your business. What do you hope to achieve by having a website? Do you want more visitors, leads, purchases or just to bring awareness to your brand or company?
                 </p>
                 {/* <p style={{marginTop: "30px"}}>
-                    Once we've figured out the purpose of your website, we can begin to research similar websites that have accomplished your business' desired outcomes to analyze their strategy, design and the level of success that they've achieved with the intention of implementing a similar approach. We will discuss the direction of brand identity to ensure it is inline with your business' perceived culture and character.
+                    Once we{"'"}ve figured out the purpose of your website, we can begin to research similar websites that have accomplished your business' desired outcomes to analyze their strategy, design and the level of success that they{"'"}ve achieved with the intention of implementing a similar approach. We will discuss the direction of brand identity to ensure it is inline with your business' perceived culture and character.
                 </p> */}
             </div>
 
@@ -50,7 +50,7 @@ const Timeline = () => {
                 </div>
                 <small>1-2 weeks</small>
                 <p>
-                    We'll then work together to synthesize a custom web design that's most optimal in allowing you to achieve desired outcomes whilst being appealing, navigable, responsive and easy to use for your target audience.
+                    We{"'"}ll then work together to synthesize a custom web design that{"'s"} most optimal in allowing you to achieve desired outcomes whilst being appealing, navigable, responsive and easy to use for your target audience.
                 </p>
             </div>
 
@@ -88,7 +88,7 @@ const Timeline = () => {
                 </div>
                 
                 <small>2 weeks</small>
-                <p>Curated content is the name of the game. This entails the value that you bring to your visitors. We'll curate each webpage tailored to the theme of your website to ensure that your visitors get exactly what they came for.</p>
+                <p>Curated content is the name of the game. This entails the value that you bring to your visitors. We{"'"}ll curate each webpage tailored to the theme of your website to ensure that your visitors get exactly what they came for.</p>
             </div>
 
             {/* <span className="tl-right-container-arrow"></span> */}
@@ -105,7 +105,7 @@ const Timeline = () => {
                     <h2>Test</h2>
                 </div>
                 <small>2 weeks</small>
-                <p>In this phase, we'll test your site to ensure that it operates flawlessly as expected before launching. It's an examination of every aspect, ensuring a consistent experience across all devices and addressing any bugs or inconsistencies.</p>
+                <p>In this phase, we{"'s"}ll test your site to ensure that it operates flawlessly as expected before launching. It{"'s"} an examination of every aspect, ensuring a consistent experience across all devices and addressing any bugs or inconsistencies.</p>
             </div>
 
             {/* <span className="tl-right-container-arrow"></span> */}

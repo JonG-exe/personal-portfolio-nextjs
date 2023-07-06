@@ -76,7 +76,7 @@ export default function SEO() {
   <ul>
     <li>Ensure your website is mobile-friendly and responsive across different devices.</li>
     <li>Improve page loading speed by compressing images, minifying code, and utilizing caching.</li>
-    <li>Optimize your website's design and layout for easy navigation and readability.</li>
+    <li>Optimize your website{"'s"}  design and layout for easy navigation and readability.</li>
   </ul>
 
   <h2>11. Schema Markup:</h2>

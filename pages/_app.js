@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="app">
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KQJY74WVM2"></Script>
-      <Script>
+      <Script id="google-analytics">
         {
           `
             <!-- Google tag (gtag.js) -->
@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }) {
 
       <Component {...pageProps} />
       <Analytics />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
       <Footer />
     </div>
