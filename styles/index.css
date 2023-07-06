@@ -292,7 +292,7 @@ body::-webkit-scrollbar {
     transition: all 0.3s;
 
     font-family: "Poppins", "Open Sans", "Roboto", sans-serif;
-    font-size: 0.95em;
+    font-size: 0.935em;
     font-weight: 500;
     color: white;
 }
@@ -1462,7 +1462,7 @@ button {
     .CTA {
         min-width: 130px;
         min-height: 32px;
-        font-size: 0.79em;
+        font-size: 0.69em;
     }
 
     .infoTile {
