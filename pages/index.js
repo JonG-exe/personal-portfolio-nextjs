@@ -22,7 +22,7 @@ export default function Content() {
                 <meta name="description" content="Transforming online visions into stunning reality with brilliant web design, development, and SEO services for maximum digital awareness and engagement."/>
 
                 <meta name="keywords" content="web developer, web development, website design trinidad, web design, internet design, designed website, web designer, designer, web developer trinidad, web developer in trinidad, trinidad web design, seo, seo expert, search engine optimization, digital marketing, apps web" />
-                <link rel="canonical" href="https://www.lucidatom.com" />
+                <link rel="canonical" href="https://lucidatom.com" />
             </Head>
 
             <div className="content">
