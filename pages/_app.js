@@ -5,7 +5,6 @@ import "../styles/tutorial.css"
 import Navbar from "../components/Navbar"
 import { Analytics } from "@vercel/analytics/react"
 import Footer from "../components/Footer"
-import Head from "next/head"
 import Script from "next/script"
 
 function MyApp({ Component, pageProps }) {
@@ -24,11 +23,10 @@ function MyApp({ Component, pageProps }) {
           `
         }
       </Script>
+
       <Navbar />
-
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       <Analytics />
-
       <Footer />
     </div>
   )

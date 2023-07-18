@@ -218,7 +218,7 @@ export default function Portfolio () {
             <div className={!showWork.isShown ? "work" : "work work_active"}>
 
                 <Glass 
-                    image={maritime_logo.src} 
+                    image={maritime_logo} 
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Supernova | Maritime"
@@ -226,7 +226,7 @@ export default function Portfolio () {
                 />
 
                 <Glass 
-                    image={asym_logo.src}
+                    image={asym_logo}
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Asymmetry"
@@ -234,7 +234,7 @@ export default function Portfolio () {
                 />
 
                 <Glass 
-                    image={chatLogo.src}
+                    image={chatLogo}
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Lucid Chat App"

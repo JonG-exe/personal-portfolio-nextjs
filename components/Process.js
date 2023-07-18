@@ -26,31 +26,31 @@ export default function Process() {
 
                         <div className="diagram-design-process-steps">
                             <div className="design-step step-1">
-                                <Image src={ResearchIcon}/>
+                                <Image src={ResearchIcon} alt="research step"/>
                                 <h4>Research</h4>
                             </div>
                             <div className="design-step step-2">
-                                <Image src={DesignIcon}/>
+                                <Image src={DesignIcon} alt="design step"/>
                                 <h4>Design</h4>
                             </div>
                             
                             <div className="design-step step-3">
-                                <Image src={BuildIcon}/>
+                                <Image src={BuildIcon} alt="build step"/>
                                 <h4>Build</h4>
                             </div>
                             
                             <div className="design-step step-4">
-                                <Image src={ContentIcon}/>
+                                <Image src={ContentIcon} alt="content creation"/>
                                 <h4>Content</h4>
                             </div>
                             
                             <div className="design-step step-5">
-                                <Image src={TestIcon}/>
+                                <Image src={TestIcon} alt="testing step"/>
                                 <h4>Test</h4>
                             </div>
                             
                             <div className="design-step step-6">
-                                <Image src={LaunchIcon}/>
+                                <Image src={LaunchIcon} alt="launching website step"/>
                                 <h4>Launch</h4>
                             </div>
                         </div>

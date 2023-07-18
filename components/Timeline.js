@@ -23,7 +23,7 @@ const Timeline = () => {
 
             <div className="text-box">
                 <div className="embedded-neu design-h2">
-                    <Image style={{height: "auto"}} src={ResearchIcon} />
+                    <Image style={{height: "auto"}} src={ResearchIcon} alt="research icon"/>
 
                     <h2>Research</h2>
                 </div>
@@ -44,7 +44,7 @@ const Timeline = () => {
 
             <div className="text-box">
                 <div className="embedded-neu design-h2">
-                    <Image style={{height: "auto"}} src={DesignIcon} />
+                    <Image style={{height: "auto"}} src={DesignIcon} alt="design icon"/>
 
                     <h2>Design</h2>
                 </div>
@@ -63,7 +63,7 @@ const Timeline = () => {
 
             <div className="text-box">
                 <div className="embedded-neu design-h2">
-                    <Image style={{height: "auto"}} src={BuildIcon} />
+                    <Image style={{height: "auto"}} src={BuildIcon} alt="build step icon" />
 
                     <h2>Build</h2>
                 </div>
@@ -82,7 +82,7 @@ const Timeline = () => {
 
             <div className="text-box">
                 <div className="embedded-neu design-h2">
-                    <Image style={{height: "auto"}} src={ContentIcon} />
+                    <Image style={{height: "auto"}} src={ContentIcon} alt="content step icon" />
 
                     <h2>Content</h2>
                 </div>
@@ -100,7 +100,7 @@ const Timeline = () => {
 
             <div className="text-box">
                 <div className="embedded-neu design-h2">
-                    <Image style={{height: "auto"}} src={TestIcon} />
+                    <Image style={{height: "auto"}} src={TestIcon} alt="test the site at its current state"/>
 
                     <h2>Test</h2>
                 </div>
@@ -117,7 +117,7 @@ const Timeline = () => {
 
             <div className="text-box">
                 <div className="embedded-neu design-h2">
-                    <Image style={{height: "auto"}} src={LaunchIcon} />
+                    <Image style={{height: "auto"}} src={LaunchIcon} alt="launch the website once finished testing"/>
 
                     <h2>Launch</h2>
                 </div>

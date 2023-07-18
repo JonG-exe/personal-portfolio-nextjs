@@ -1,6 +1,7 @@
 import tempProfilePhoto from "../images/jon-g-profile-picture.png"
+import Image from "next/image"
 
-function Tutorial({mainContent, authorImg, authorName}) {
+function Tutorial({mainContent, authorImage, authorName}) {
     return (
         <main>
             <div className="tutorial-container">
@@ -9,7 +10,7 @@ function Tutorial({mainContent, authorImg, authorName}) {
                     <h1 className="h1-tutorial">SEO - A How To Guide</h1>
 
                     <div className="tutorial-author-profile">
-                        <img className="author-img" src={authorImg.src} alt={`${authorName} is the author of this article`}/>
+                        <Image className="author-Image" src={authorImage} alt={`${authorName} is the author of this article`}/>
                         <div className="author-name">by {authorName}</div>
                     </div>
                 </div>
@@ -19,7 +20,7 @@ function Tutorial({mainContent, authorImg, authorName}) {
                 
                 <div className="tutorial-content neu-tutorial">
 
-                    <img className="tutorial-content-img" src={tempProfilePhoto.src} alt={`Author ${authorName}'s profile photo`}/>
+                    <Image className="tutorial-content-Image" src={tempProfilePhoto} alt={`Author ${authorName}'s profile photo`}/>
 
                     {mainContent}
 

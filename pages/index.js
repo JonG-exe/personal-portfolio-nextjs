@@ -22,9 +22,6 @@ export default function Content() {
                 <meta name="description" content="Transforming online visions into stunning reality with brilliant web design, development, and SEO services for maximum digital awareness and engagement."/>
 
                 <meta name="keywords" content="web developer, web development, website design trinidad, web design, internet design, designed website, web designer, designer, web developer trinidad, web developer in trinidad, trinidad web design, seo, seo expert, search engine optimization, digital marketing, apps web" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
                 <link rel="canonical" href="https://www.lucidatom.com" />
             </Head>
 

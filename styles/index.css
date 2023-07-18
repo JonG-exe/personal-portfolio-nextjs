@@ -461,6 +461,7 @@ body::-webkit-scrollbar {
     pointer-events: none;
     z-index: 1;
     width: 25%;
+    height: auto;
     position: absolute;
     top: -12%;
     right: 4.4%;
@@ -649,6 +650,7 @@ button {
 .neu-profile-pic {
     pointer-events: none;
     width: 90%;
+    height: auto;
 }
 
 /* ------------------ Section two ---------------------- */

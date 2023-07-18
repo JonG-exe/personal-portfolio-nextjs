@@ -8,7 +8,7 @@ export default function Glass(props) {
             name={props.name}
             className={props.className ? props.className : "glass"}
         >
-            <img className="work_logo" src={props.image} alt={props.alt}/> 
+            <Image className="work_logo" src={props} alt={props.alt}/> 
             
         </button>
     )

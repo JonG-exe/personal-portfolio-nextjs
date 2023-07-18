@@ -3,6 +3,7 @@ import InfoTile from "./InfoTile";
 import profile_pic from "../images/jon-g-profile-picture.png"
 import PageDesign from "./PageDesign"
 import Link from "next/link"
+import Image from "next/image";
 
 let infoTile_info = {
     tile_one: {
@@ -22,9 +23,9 @@ let infoTile_info = {
 
 export default function Home () {
 
-    let animDuration = null
-
     useEffect(() => {
+
+        let animDuration = null
 
         // Reduce Home Animation Speed for the current session if already loaded once before
         if(sessionStorage.getItem("loaded") === null) { // Should be non-existent on first load
@@ -124,7 +125,7 @@ export default function Home () {
                     <div className="profile-pic-area neu neu-circle embedded-neu">
                         
                         <div className="neu-circle-in-circle neu extruded-neu">
-                            <img className="neu-profile-pic" src={profile_pic.src} alt="Jonathan Gray - Lucid Atom's lead freelance web developer"/>
+                            <Image className="neu-profile-pic" src={profile_pic} alt="Jonathan Gray - Lucid Atom's lead freelance web developer"/>
                         </div>
 
                         <Link href="/contact">

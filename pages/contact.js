@@ -36,9 +36,6 @@ function Contact() {
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="You can feel free to contact Jonathan Gray for projects UI/UX design, web design, web development and search engine optimization."/>
                 <meta name="keywords" content="contact web developer, find web designer, contact us, get in touch, web desinger near me, web developer near me, near me, web developer, web development, web design, web designer, designer, web developer trinidad, web developer in trinidad, seo, seo expert, search engine optimization" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
                 <link rel="canonical" href="https://www.lucidatom.com/contact" />
             </Head>
 

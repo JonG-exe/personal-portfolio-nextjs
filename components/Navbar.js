@@ -63,35 +63,35 @@ function Navbar() {
 
                 <li className="nav-link">
                     <Link href="/">
-                        <Image id="nav-home-logo" src={Logo} />
+                        <Image id="nav-home-logo" src={Logo} alt="lucid atom home link logo" />
                         <span>Home</span>
                     </Link>
                 </li>
 
                 {/* <li className="nav-link hide-link">
                     <Link href="/about">
-                        <Image src={aboutImg} />
+                        <Image src={aboutImg} alt="about page icon"/>
                         <span>About</span>
                     </Link>
                 </li> */}
 
                 {/* <li className="nav-link">
                     <Link href="/services">
-                        <Image src={servicesImg} />
+                        <Image src={servicesImg} alt="services page icon" />
                         <span>Services</span>
                     </Link>
                 </li> */}
 
                 <li className="nav-link hide-link">
                     <Link href="/#section_two">
-                        <Image src={portfolioImg} />
+                        <Image src={portfolioImg} alt="icon to jump to portfolio section"/>
                         <span>Portfolio</span>
                     </Link>
                 </li>
 
                 <li className="nav-link">
                     <Link  href="/contact">
-                        <Image src={contactImg} />
+                        <Image src={contactImg} alt="contact icon"/>
                         <span>Contact</span>
                     </Link>
                 </li>

@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image"
 import image_one from "../images/html_5.png"
 import image_two from "../images/css_3.png"
 import image_three from "../images/javascript.png"
@@ -18,7 +19,7 @@ export default function InfoTile(props) {
             </div>
             
             
-            {/* {props.pageDesignElement && <img className="books" src={props.pageDesignElement} alt={props.alt}/>} */}
+            {/* {props.pageDesignElement && <Image className="books" src={props.pageDesignElement} alt={props.alt}/>} */}
 
             {props.className === "infoTile infoTile_three" 
 
@@ -28,12 +29,12 @@ export default function InfoTile(props) {
 
                     <div id="selected-icon"></div>
 
-                    <img className="icon-image" src={image_one.src} name="html5" alt="html 5 logo"/>
-                    <img className="icon-image" src={image_two.src} name="css3" alt="css 3 logo"/>
-                    <img className="icon-image" src={image_three.src} name="javascript" alt="javascript logo"/>
-                    <img className="icon-image" src={image_four.src} name="mongodb" alt="mongodb logo"/>
-                    <img className="icon-image" src={image_five.src} name="react" alt="react logo"/>
-                    <img className="icon-image" src={image_six.src} name="adobexd" alt="adobe XD logo"/>
+                    <Image className="icon-image" src={image_one} name="html5" alt="html 5 logo"/>
+                    <Image className="icon-image" src={image_two} name="css3" alt="css 3 logo"/>
+                    <Image className="icon-image" src={image_three} name="javascript" alt="javascript logo"/>
+                    <Image className="icon-image" src={image_four} name="mongodb" alt="mongodb logo"/>
+                    <Image className="icon-image" src={image_five} name="react" alt="react logo"/>
+                    <Image className="icon-image" src={image_six} name="adobexd" alt="adobe XD logo"/>
                     
                     {/* <span style={{"display" : "none"}}>{setTimeout(iconHover, 
                     100)}</span> */}
