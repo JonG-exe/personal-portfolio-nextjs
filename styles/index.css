@@ -448,6 +448,7 @@ body::-webkit-scrollbar {
 
 .icon-image {
     width: 46px;
+    height: auto;
     margin: 0 5px 4px;
 }
 
@@ -719,6 +720,7 @@ button {
 .work_logo {
     pointer-events: none;
     width: 30%;
+    height: auto;
 }
 
 .glass {

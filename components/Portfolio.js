@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import CV from "./CV.js"
-import maritime_logo from "../images/maritime-logo.png"
+import supernova_logo from "../images/supernova-financial-logo.png"
 import asym_logo from "../images/asym_logo.png"
 import Glass from "./Glass"
 import switchArrow from "../images/photo-switch-arrow.png"
@@ -218,7 +218,7 @@ export default function Portfolio () {
             <div className={!showWork.isShown ? "work" : "work work_active"}>
 
                 <Glass 
-                    image={maritime_logo} 
+                    image={supernova_logo} 
                     onClick={tileClick} 
                     className={showWork.isShown && "glass glass_active"}
                     name="Supernova | Maritime"
