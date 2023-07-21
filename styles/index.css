@@ -539,6 +539,7 @@ body::-webkit-scrollbar {
     z-index: 1;
     position: absolute;
     width: 175px;
+    height: auto;
     bottom: 0;
     left: 6%;
     opacity: 0;

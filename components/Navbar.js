@@ -13,6 +13,8 @@ import aboutImg from "../images/icons/about.png"
 import servicesImg from "../images/icons/services.png"
 import portfolioImg from "../images/icons/portfolio.png"
 import contactImg from "../images/icons/contact.png"
+import BookIcon from '@mui/icons-material/Book';
+import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 function Navbar() {
 
@@ -63,7 +65,7 @@ function Navbar() {
 
                 <li className="nav-link">
                     <Link href="/">
-                        <Image id="nav-home-logo" src={Logo} alt="lucid atom home link logo" />
+                        <Image id="nav-home-logo" src={Logo} alt="lucid atom home link" />
                         <span>Home</span>
                     </Link>
                 </li>
@@ -89,12 +91,22 @@ function Navbar() {
                     </Link>
                 </li>
 
+                <li className="nav-link hide-link">
+                    <Link href="/blog">
+                        <BookIcon sx={{color:"black", mb:"10px"}} alt="link to web development blog" /> 
+                        <span>Blog</span>
+                    </Link>
+                </li>
+
                 <li className="nav-link">
                     <Link  href="/contact">
-                        <Image src={contactImg} alt="contact icon"/>
+                        <Image src={contactImg} alt="link to contact page"/>
                         <span>Contact</span>
                     </Link>
                 </li>
+
+                
+                
 
                 {/* <li className="home_icon">
                     <Link href="/">

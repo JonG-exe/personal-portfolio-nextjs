@@ -44,6 +44,7 @@ const Footer = () => {
                     <Link href="/services">Services</Link>
                     <Link href="/#section_two">Portfolio</Link>
                     <Link href="/contact">Contact Us</Link>
+                    <Link href="/blog">Blog</Link>
                 </div>
 
                 <div className="footer-contact-method">
