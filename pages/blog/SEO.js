@@ -18,7 +18,7 @@ export default function SEO() {
                     <br />
 
                     <div>
-                      Understand the basics and fundamentals of SEO so that you can have the most optimal advantage for ranking your website on search engines."
+                      Understand the basics and fundamentals of SEO so that you can have the most optimal advantage for ranking your website on search engines.
                     </div> 
 
                     <br/>

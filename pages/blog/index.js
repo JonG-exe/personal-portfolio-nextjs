@@ -10,7 +10,7 @@ export default function Blog() {
         <>
             <Head>
                 <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{"'s"} standard dummy text ever since the 1500s
                 <link rel="canonical" href="https://www.lucidatom.com/blog" />
                 <title>Blog - Web Development | Lucid Atom</title>
                 <meta name="description" content="" />
