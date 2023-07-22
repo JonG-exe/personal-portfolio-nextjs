@@ -19,14 +19,14 @@ const Accordion = ( {question, answer, sign} ) => {
     }, [])
 
   return (
-    <div class="accordion">
+    <div className="accordion">
 
-        <div class="label">
+        <div className="label">
             <p>{question}</p>
-            <p class="sign">{sign ? sign : "+"}</p>
+            <p className="sign">{sign ? sign : "+"}</p>
         </div>
 
-        <p class="text-area">
+        <p className="text-area">
             {answer ? answer : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, corrupti pariatur aliquam perspiciatis nemo, quas consequuntur fugiat ipsa omnis enim beatae aspernatur, earum hic fugit dolore non dicta sit culpa?"}
         </p>
 

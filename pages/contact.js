@@ -6,7 +6,35 @@ import subject_icon from "../images/subject_icon.png"
 import emailjs from "@emailjs/browser"
 import Image from "next/image"
 
+import { Grid, Box, Typography, Container, CssBaseline, Button, TextField, TextareaAutosize } from '@mui/material/';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+
 function Contact() {
+
+    const theme = createTheme({
+        components: {
+            MuiTextField: {
+                styleOverrides: {
+                    root: {
+                        boxShadow: "-2px -1px 2px 1px white, 2px 1px 3px 1px rgba(0, 0, 0, 0.25)",
+                        border: "none",
+                    }
+                }
+            },
+            MuiButton: {
+                styleOverrides: {
+                    root: {
+                        "&:hover": {
+                            backgroundColor: "rgb(255, 106, 0)",
+                            transition: "all 0.3s",
+                        }
+                    }
+                }
+            },
+            
+        }
+    })
 
     /**
      * Send email from submited form
@@ -14,7 +42,7 @@ function Contact() {
     
     const form = useRef();
 
-    function sendEmail(e) {
+    function handleSubmit(e) {
         e.preventDefault();
 
         alert("Form sent sucessfully. Thanks for reaching out!")
@@ -39,38 +67,139 @@ function Contact() {
                 <link rel="canonical" href="https://www.lucidatom.com/contact" />
             </Head>
 
-            <section className="contact_container">
+            <ThemeProvider theme={theme}>
+                <Container component="main" maxWidth="xs" >
+                    <CssBaseline />
+                    <Box p="20px">
+                        <Box
+                            sx={{
+                                marginTop: 8,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                            }}
+                        >
+                        <Typography 
+                            marginTop="40px"
+                            padding="15px 30px"
+                            color="grey"
+                            fontFamily="Poppins, sans-serif"
+                            fontWeight="bold"
+                            textAlign="center"
+                            component="h1"
+                            variant="h5"
+                            boxShadow="-6px -4px 15px 4px white inset, 2px 3px 17px 3px rgba(0, 0, 0, 0.4) inset"
+                            border="3px solid rgba(173, 169, 169, 0.05)"
+                            transition="all 1s"
+                        >
+                            Get In Touch
+                        </Typography>
 
-                <span className="contact-h1-neu neu embedded-neu"><h1 className="h1-contact">Get In Touch</h1></span>
+                        <Box ref={form} onSubmit={handleSubmit} component="form" noValidate  sx={{ mt: 3, width:"700px", maxWidth:"90vw"}} >
+                            <Grid container spacing={2}>
 
-                <form onSubmit={sendEmail} ref={form} className="contact_form" action="" method="POST" >
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                    autoComplete="given-name"
+                                    name="first_name"
+                                    // className="form-input neu extruded-neu"
+                                    required
+                                    fullWidth
+                                    id="firstName"
+                                    label="First Name"
+                                    autoFocus
+                                    />
+                                </Grid>    
 
-                    <div className="contact-input">
-                        <input className="form-input neu extruded-neu" name="first_name" placeholder="First Name" required />
-                        <span><Image className="contact_icon" src={person_icon} alt="person icon"/></span>
-                        <input className="form-input neu extruded-neu" name="last_name" placeholder="Last Name" required />
-                    </div>
-                    
-                    <div className="contact-input">
-                        <input className="form-input neu extruded-neu" name="phone" type="phone" placeholder="Phone" />
-                        <span><Image className="contact_icon" src={phone_email_icon} alt="contact icon"/></span>
-                        <input className="form-input neu extruded-neu" name="email" type="email" placeholder="Email" required />
-                    </div>
-                    
-                    <div className="contact-input">
-                        <span><Image className="contact_icon" src={subject_icon} alt="subject icon"/></span>
-                        <input className="form-input subject_input neu extruded-neu" name="subject" placeholder="Subject" required />
-                    </div>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                    required
+                                    fullWidth
+                                    id="last_name"
+                                    label="Last Name"
+                                    name="lastName"
+                                    autoComplete="family-name"
+                                    />
+                                </Grid>
 
-                    <textarea name="message" className="textbox neu extruded-neu" required placeholder="How can I help?" />
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                    fullWidth
+                                    id="phone"
+                                    label="Phone"
+                                    name="phone"
+                                    autoComplete="phone"
+                                    />
+                                </Grid>
 
-                    <div className="submit">
-                        <input className="submit_input" name="submit" type="submit" value={"Submit"}/>
-                    </div>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                        required
+                                        fullWidth
+                                        id="email"
+                                        label="Email"
+                                        name="email"
+                                        autoComplete="email"
+                                    />
+                                </Grid>
 
-                </form>
+                                <Grid item xs={12}>
+                                    <TextField
+                                        required
+                                        fullWidth
+                                        id="subject"
+                                        label="Subject"
+                                        name="subject"
+                                        autoComplete="subject"
+                                    />
+                                </Grid>
 
-            </section>
+                                <Grid item xs={12} >
+                                    <TextareaAutosize 
+                                        required
+                                        name="message"
+                                        style={{
+                                            margin: "10px 0 0 0",
+                                            minHeight: "250px",
+                                            width: "100%",
+                                            resize: "none",
+                                            borderRadius: "2px",
+                                            border: "2px solid lightgrey",
+                                            backgroundColor: "transparent",
+                                            boxShadow: "-2px -1px 2px 1px white, 2px 1px 3px 1px rgba(0, 0, 0, 0.25)",
+                                        }}
+                                    />
+                                </Grid>
+                            
+                            </Grid>
+
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                sx={{ 
+                                    mt: 3,
+                                    mb: 2, 
+                                    backgroundColor: "red",
+                                    maxWidth: "140px",
+                                    alignSelf: "center",
+                                    fontSize: "1.25em",
+                                    ml: "auto",
+                                    padding: "6px 5px 10px 5px",
+                                    backgroundColor: "#7E7F80",
+                                    backgroundColor: "#7E7F80",
+                                    border: "2px solid #505151",
+                                    borderRadius: "0",
+                                }}
+                            >
+                                Submit
+                            </Button>
+                        </Box>
+                        </Box>
+                    </Box>
+                </Container>
+            </ThemeProvider>
+
         </>
         
     )
