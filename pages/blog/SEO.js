@@ -14,7 +14,7 @@ export default function SEO() {
             authorImg={ImageAuthor}
             authorName="Jon.G"
             mainContent={
-                <div>
+                <div class="blog-article">
                     <br />
 
                     <div>
