@@ -80,7 +80,7 @@ function Contact() {
                             }}
                         >
                         <Typography 
-                            marginTop="40px"
+                            marginTop={{xs: "40px", md: "0"}}
                             padding="15px 30px"
                             color="grey"
                             fontFamily="Poppins, sans-serif"
