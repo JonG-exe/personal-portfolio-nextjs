@@ -34,8 +34,8 @@ const BlogLink = ( { title, description, image, href } ) => {
                 justifyContent={"flex-start"}
                 alignItems={"center"}
             >
-                <Box maxWidth="45%" m="20px" display="flex" justifyContent={"center"}>
-                    <Image width={200} src={image} alt="" />
+                <Box width="45%" maxWidth="45%" m="20px" display="flex" justifyContent={"center"}>
+                    <Image width={200} className="blog-link-image" src={image} alt="" />
                 </Box>
 
                 <Box mr="20px" p="25px" display="flex" flexDirection="column" justifyContent={"center"} alignItems={"center"}>

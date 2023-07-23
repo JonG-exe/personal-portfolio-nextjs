@@ -1,5 +1,5 @@
 .h1-tutorial {
-    color: grey;
+    color: rgb(94, 94, 94);
     font-size: 2.3rem;
     width: max-content;
     height: max-content;
@@ -13,6 +13,12 @@
 .blog-article {
     padding: 10px 0;
     font-size: 1.2em;
+}
+
+p {
+    margin-left: 20px;
+    margin: 20px;
+
 }
 
 .blog-article ul li {

@@ -3,6 +3,7 @@ import { Stack, Container, Typography, Box, CssBaseline } from "@mui/material"
 import Head from "next/head"
 import BlogLink from "../../components/BlogLink"
 import SEOImage from "../../images/seo.png"
+import heroImage from "../../images/Blog/top-10-web-design-trends-2023/hero-image-10-website-trends.jpg"
 
 
 export default function Blog() {
@@ -35,6 +36,13 @@ export default function Blog() {
                         title="SEO - A How To Guide" 
                         description="Understand the basics and fundamentals of SEO so that you can have the most optimal advantage for ranking your website on search engines."
                         href="/blog/SEO"
+                    />
+
+                    <BlogLink 
+                        image={heroImage}
+                        title="10 Web Design Trends of 2023" 
+                        description="As the digital landscape evolves, so do the trends that shape our online experiences, from captivating visuals to user-friendly interfaces."
+                        href="/blog/top-10-web-design-trends-2023"
                     />
 
                 
