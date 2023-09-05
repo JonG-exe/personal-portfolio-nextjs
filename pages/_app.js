@@ -1,7 +1,7 @@
 import "../styles/index.css"
 import "../styles/contact.css"
 import "../styles/services.css"
-import "../styles/tutorial.css"
+import "../styles/blog.css"
 import Navbar from "../components/Navbar"
 import { Analytics } from "@vercel/analytics/react"
 import Footer from "../components/Footer"
@@ -23,6 +23,9 @@ function MyApp({ Component, pageProps }) {
           `
         }
       </Script>
+
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9221889644731005"
+     crossorigin="anonymous"></Script>
 
       <Navbar />
         <Component {...pageProps} />

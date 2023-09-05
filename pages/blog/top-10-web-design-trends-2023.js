@@ -12,6 +12,8 @@ export default function SEO() {
             mainImage={heroImage}
             authorImg={ImageAuthor}
             authorName="Jon.G"
+            canonical={"/top-10-web-design-trends-2023"}
+            dateWritten={"23rd July, 2023"}
             mainContent={
                 <div class="blog-article">
 

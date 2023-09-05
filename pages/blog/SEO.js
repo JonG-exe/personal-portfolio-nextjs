@@ -13,6 +13,8 @@ export default function SEO() {
             mainImage={SEOImage}
             authorImg={ImageAuthor}
             authorName="Jon.G"
+            canonical={"/SEO"}
+            dateWritten={"23rd July, 2023"}
             mainContent={
                 <div class="blog-article">
                     <br />

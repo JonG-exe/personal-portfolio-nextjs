@@ -1,20 +1,11 @@
 import React, {useState, useEffect} from "react"
-// import facebook_icon from "../images/facebook_icon.png"
-// import linkedin_icon from "../images/linkedin_icon.png"
-// import menu_icon from "../images/menu_icon.png"
-// import youtube_icon from "../images/youtube_icon.png"
-import home_icon from "../images/home_icon.png"
 import Link from "next/link"
 import Image from "next/image"
 import Menu from "./Menu"
 import Logo from "../images/logo.png"
-import homeImg from "../images/icons/home.png"
-import aboutImg from "../images/icons/about.png"
-import servicesImg from "../images/icons/services.png"
 import portfolioImg from "../images/icons/portfolio.png"
 import contactImg from "../images/icons/contact.png"
 import BookIcon from '@mui/icons-material/Book';
-import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 function Navbar() {
 

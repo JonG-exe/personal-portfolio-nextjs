@@ -1,4 +1,4 @@
-.h1-tutorial {
+.h1-blog {
     color: rgb(94, 94, 94);
     font-size: 2.3rem;
     width: max-content;
@@ -30,8 +30,7 @@ p {
     margin: 20px;
 }
 
-.tutorial-author-profile {
-    /* margin-right: 20px; */
+.blog-author-profile {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -50,7 +49,7 @@ p {
     height: auto;
 }
 
-.tutorial-container {
+.blog-container {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: row;
@@ -92,14 +91,14 @@ main {
     /* background-color: green; */
 }
 
-.tutorial-content {
+.blog-content {
     width: 65%;
     height: max-content;
     margin: 30px auto 0 0;
     padding: 20px;
 }
 
-.tutorial-content-image {
+.blog-content-image {
     display: block;
     /* float: right; */
     margin: 0 20px 10px 0;
@@ -156,7 +155,7 @@ main {
     width: 30%;
 }
 
-.neu-tutorial {
+.neu-blog {
     box-shadow: -5px -6px 10px 2px white inset,
                 2px 2px 14px 2px rgba(0, 0, 0, 0.4) inset;
     border: 3px solid rgba(173, 169, 169, 0.05);
@@ -167,13 +166,13 @@ main {
 
 @media screen and (max-width: 1000px) {
 
-    .h1-tutorial {
+    .h1-blog {
         font-size: 1.8em;
         padding: 10px 15px;
 
     }
 
-    .tutorial-container {
+    .blog-container {
         width: 92%;
         margin-top: 80px;
     }
@@ -182,7 +181,7 @@ main {
         width: 100%;
     }
 
-    .tutorial-content {
+    .blog-content {
         width: 100%;
     }
 
