@@ -14,7 +14,7 @@ export default function Content() {
         <>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Website Design and Development In Trinidad | Lucid Atom</title>
+                <title>Trinidad and Tobago Web Design | Lucid Atom</title>
                 <link rel="canonical" href="https://www.lucidatom.com" />
                 <link rel="icon" href="/favicon.ico" />
                 {/* <meta name="description" content="Transforming online visions into stunning reality with brilliant web design, development, and SEO services for maximum digital awareness and engagement."/> */}
