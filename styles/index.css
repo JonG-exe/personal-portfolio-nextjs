@@ -1894,9 +1894,10 @@ footer {
 
 .site-links a {
     margin: 0 10px;
-    font-size: 1.3em;
-    font-family: "Poppins", sans-serif;
+    font-size: 1.15em;
+    font-family: Poppins,sans-serif;
     text-decoration: none;
+    color: black;
     text-align: center;
 }
 

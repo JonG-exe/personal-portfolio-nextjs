@@ -49,7 +49,8 @@ const Footer = () => {
 
                 <div className="footer-contact-method">
                     <span className="phone" title="email">1 (868) 743-1018</span>
-                    <span className="email" title="email">developer@lucidatom.com</span>
+                    {/* <span className="email" title="email">developer@lucidatom.com</span> */}
+                    <span className="email" title="email">lucidatomdeveloper@gmail.com</span>
                 </div>
 
             </div>
